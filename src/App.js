@@ -277,6 +277,58 @@ const Manifesto = ({ lang }) => {
   );
 };
 
+const VideoPortfolio = () => {
+  const videos = [
+    { id: 1, src: '/videos/virgin-mary-crown.mp4', title: 'Virgin Mary Crown' },
+    { id: 2, src: '/videos/hijabi-desert.mp4', title: 'Hijabi Desert' },
+    { id: 3, src: '/videos/mysterious-figure.mp4', title: 'Mysterious Figure' },
+    { id: 4, src: '/videos/white-dust.mp4', title: 'White Dust' },
+    { id: 5, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
+    { id: 6, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
+    { id: 7, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
+    { id: 8, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
+    { id: 9, src: '/videos/walking-away-01.mp4', title: 'Walking Away 01' },
+    { id: 10, src: '/videos/walking-away-02.mp4', title: 'Walking Away 02' }
+  ];
+
+  return (
+    <section className="py-32 px-4 md:px-12 border-b border-white/10">
+      <Reveal>
+        <div className="relative z-10 flex justify-between items-end mb-24">
+          <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
+            Sacred Aesthetics
+          </h3>
+          <span className="text-xs font-mono text-neutral-500">Religious Iconography</span>
+        </div>
+      </Reveal>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {videos.map((video, index) => (
+          <Reveal key={video.id} delay={index * 100}>
+            <div className="relative group cursor-pointer overflow-hidden border border-white/10 hover:border-white/50 transition-all duration-500">
+              <video
+                src={video.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center">
+                    <ArrowRight size={24} className="text-white" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const Work = ({ lang }) => {
   const t = content[lang].work;
   return (
@@ -366,6 +418,7 @@ const App = () => {
       <Navbar lang={lang} setLang={setLang} />
       <Hero lang={lang} />
       <Manifesto lang={lang} />
+      <VideoPortfolio />
       <Work lang={lang} />
       <Footer lang={lang} />
     </div>
