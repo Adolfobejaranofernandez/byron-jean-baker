@@ -374,7 +374,7 @@ const VideoPortfolio = () => {
                   <div className="relative bg-neutral-950 border border-white/10 p-8 md:p-12 flex flex-col justify-center min-h-[300px]">
                     <div className="space-y-6">
                       <div className="w-12 h-px bg-white/20"></div>
-                      <p className="text-base md:text-lg font-sans text-neutral-400 leading-relaxed">
+                      <p className="text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase">
                         {item.description.text.split(item.description.highlight1)[0]}
                         <span style={{color: item.description.color1}}>{item.description.highlight1}</span>
                         {item.description.text.split(item.description.highlight1)[1].split(item.description.highlight2)[0]}
