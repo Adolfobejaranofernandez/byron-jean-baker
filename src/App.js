@@ -201,9 +201,9 @@ const Hero = ({ lang }) => {
             <Square size={8} className="fill-white" />
             <span className="text-[10px] font-mono uppercase tracking-[0.3em]">
               {lang === 'en' ? (
-                <>ALGORITHMIC <span style={{color: '#E8D7A0'}}>CINEMA</span> STUDIO</>
+                <>ALGORITHMIC <span style={{color: '#FFDB6D'}}>CINEMA</span> STUDIO</>
               ) : (
-                <>ESTUDIO DE <span style={{color: '#E8D7A0'}}>CINE</span> ALGORÍTMICO</>
+                <>ESTUDIO DE <span style={{color: '#FFDB6D'}}>CINE</span> ALGORÍTMICO</>
               )}
             </span>
           </div>
@@ -216,21 +216,21 @@ const Hero = ({ lang }) => {
         </Reveal>
         <Reveal delay={400}>
           <div className="flex flex-col md:flex-row items-start md:items-baseline gap-8">
-            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em", color: '#E8D7A0'}}>
+            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em", color: '#FF9F7A'}}>
               {lang === 'en' ? 'FICTION.' : 'A LA FICCIÓN.'}
             </h1>
             <p className="max-w-md text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase mt-4 md:mt-0">
                <span className="text-white block mb-2">
                  {lang === 'en' ? (
-                   <>// <span style={{color: '#A8C69F'}}>001</span>. The Product</>
+                   <>// <span style={{color: '#A4C997'}}>001</span>. The Product</>
                  ) : (
-                   <>// <span style={{color: '#A8C69F'}}>001</span>. El Producto</>
+                   <>// <span style={{color: '#FF9F7A'}}>001</span>. El Producto</>
                  )}
                </span>
                {lang === 'en' ? (
-                 <>We engineer <span style={{color: '#E8D7A0'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#E8D7A0'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A8C69F'}}>8K</span> reality.</>
+                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: .#FF9F7A.}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
                ) : (
-                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#E8D7A0'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#E8D7A0'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A8C69F'}}>8K</span>.</>
+                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#FFDB6D'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
                )}
             </p>
           </div>
@@ -275,23 +275,23 @@ const Manifesto = ({ lang }) => {
            <Reveal delay={200}>
              <p className="text-2xl md:text-5xl font-bold uppercase tracking-tight text-white mb-8 leading-none">
                {lang === 'en' ? (
-                 <>Traditional production is slow, expensive, and bound by <span style={{color: '#E8D7A0'}}>gravity</span>. We are <span style={{color: '#A8C69F'}}>not</span>.</>
+                 <>Traditional production is slow, expensive, and bound by <span style={{color: '#FFDB6D'}}>gravity</span>. We are <span style={{color: '#A4C997'}}>not</span>.</>
                ) : (
-                 <>La producción tradicional es lenta, cara y está atada a la <span style={{color: '#E8D7A0'}}>gravedad</span>. Nosotros <span style={{color: '#A8C69F'}}>no</span>.</>
+                 <>La producción tradicional es lenta, cara y está atada a la <span style={{color: '#FFDB6D'}}>gravedad</span>. Nosotros <span style={{color: '#A4C997'}}>no</span>.</>
                )}
              </p>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-white/10 pt-8">
                <p className="text-neutral-400 font-sans text-lg leading-relaxed">
                  {lang === 'en' ? (
-                   <>Byron Jean Baker combines director-level storytelling with proprietary <span style={{color: '#A8C69F'}}>AI</span> models to produce high-end commercials, fashion films, and brand universes that were previously <span style={{color: '#E8D7A0'}}>unfilmable</span>.</>
+                   <>Byron Jean Baker combines director-level storytelling with proprietary <span style={{color: '#A4C997'}}>AI</span> models to produce high-end commercials, fashion films, and brand universes that were previously <span style={{color: '#FFDB6D'}}>unfilmable</span>.</>
                  ) : (
-                   <>Byron Jean Baker combina narrativa de director de cine con modelos de <span style={{color: '#A8C69F'}}>IA</span> propietarios para producir spots de alta gama, fashion films y universos de marca que antes eran <span style={{color: '#E8D7A0'}}>infilmables</span>.</>
+                   <>Byron Jean Baker combina narrativa de director de cine con modelos de <span style={{color: '#A4C997'}}>IA</span> propietarios para producir spots de alta gama, fashion films y universos de marca que antes eran <span style={{color: '#FFDB6D'}}>infilmables</span>.</>
                  )}
                </p>
                <div className="bg-neutral-900 p-6 font-mono text-xs text-neutral-500 space-y-2 uppercase">
-                  <div className="flex justify-between"><span>{t.specs.s1}</span><span style={{color: '#E8D7A0'}}>{t.specs.v1}</span></div>
-                  <div className="flex justify-between"><span>{t.specs.s2}</span><span style={{color: '#A8C69F'}}>{t.specs.v2}</span></div>
-                  <div className="flex justify-between"><span>{t.specs.s3}</span><span style={{color: '#E8D7A0'}}>{t.specs.v3}</span></div>
+                  <div className="flex justify-between"><span>{t.specs.s1}</span><span style={{color: '#FFDB6D'}}>{t.specs.v1}</span></div>
+                  <div className="flex justify-between"><span>{t.specs.s2}</span><span style={{color: '#A4C997'}}>{t.specs.v2}</span></div>
+                  <div className="flex justify-between"><span>{t.specs.s3}</span><span style={{color: '#FFDB6D'}}>{t.specs.v3}</span></div>
                </div>
              </div>
            </Reveal>
@@ -315,7 +315,7 @@ const VideoPortfolio = () => {
       <Reveal>
         <div className="relative z-10 flex justify-between items-end mb-24">
           <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
-            Sacred <span style={{color: '#E8D7A0'}}>Aesthetics</span>
+            Sacred <span style={{color: '#FFDB6D'}}>Aesthetics</span>
           </h3>
           <span className="text-xs font-mono text-neutral-500">Religious Iconography</span>
         </div>
@@ -398,9 +398,9 @@ const Footer = ({ lang }) => {
            <Reveal>
              <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white mb-8 leading-[0.8]">
                {lang === 'en' ? (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8D7A0'}}>Build</span> It.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#FF9F7A'}}>Build</span> It.</span></>
                ) : (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8D7A0'}}>Crear</span>lo.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#FF9F7A'}}>Crear</span>lo.</span></>
                )}
              </h2>
            </Reveal>
@@ -422,9 +422,9 @@ const Footer = ({ lang }) => {
                  <div className="w-full h-32 bg-neutral-900 border border-white/10 flex items-center justify-center p-4 text-center">
                     <span className="text-[10px] font-mono text-neutral-600 uppercase whitespace-pre-line">
                        {lang === 'en' ? (
-                         <>We are the <span style={{color: '#A8C69F'}}>architects</span><br/>of the <span style={{color: '#E8D7A0'}}>impossible</span>.</>
+                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: .#FF9F7A.}}>impossible</span>.</>
                        ) : (
-                         <>Somos los <span style={{color: '#A8C69F'}}>arquitectos</span><br/>de lo <span style={{color: '#E8D7A0'}}>imposible</span>.</>
+                         <>Somos los <span style={{color: '#A4C997'}}>arquitectos</span><br/>de lo <span style={{color: '#FFDB6D'}}>imposible</span>.</>
                        )}
                     </span>
                  </div>
