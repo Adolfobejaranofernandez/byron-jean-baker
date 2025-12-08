@@ -306,26 +306,53 @@ const VideoPortfolio = () => {
     {
       title: 'Sacred Aesthetics',
       subtitle: 'Religious Iconography',
+      description: {
+        text: 'Ceremonial narratives where divinity meets dust. Each frame echoes ancient rituals reimagined through algorithmic devotion.',
+        highlight1: 'divinity',
+        highlight2: 'algorithmic',
+        color1: '#FFDB6D',
+        color2: '#A4C997'
+      },
       videos: [
         { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
         { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
         { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
         { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
         { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
-      ]
+      ],
+      textCardPosition: 2 // Random position 0-5
     },
     {
       title: 'Haute Visions',
       subtitle: 'Fashion Films',
+      description: {
+        text: 'Movement as architecture. Fabric defying physics. The intersection of haute couture and computational vision.',
+        highlight1: 'physics',
+        highlight2: 'computational',
+        color1: '#E8734E',
+        color2: '#A4C997'
+      },
       videos: [
         { id: 6, src: '/videos/fashion-lunar.mp4', title: 'Lunar' },
         { id: 7, src: '/videos/fashion-desert-01.mp4', title: 'Desert 01' },
         { id: 8, src: '/videos/fashion-desert-02.mp4', title: 'Desert 02' },
         { id: 9, src: '/videos/fashion-walking.mp4', title: 'Walking' },
         { id: 10, src: '/videos/fashion-robots.mp4', title: 'Robots' }
-      ]
+      ],
+      textCardPosition: 4 // Random position 0-5
     }
   ];
+
+  // Insert text card at random position
+  const getItemsWithTextCard = (category) => {
+    const items = [...category.videos];
+    items.splice(category.textCardPosition, 0, { 
+      id: 'text-card', 
+      type: 'text',
+      description: category.description 
+    });
+    return items;
+  };
 
   return (
     <section className="py-32 px-4 md:px-12 border-b border-white/10">
@@ -341,11 +368,30 @@ const VideoPortfolio = () => {
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black">
-            {category.videos.map((video, index) => (
-          <Reveal key={video.id} delay={index * 100}>
+            {getItemsWithTextCard(category).map((item, index) => (
+              <Reveal key={item.id} delay={index * 100}>
+                {item.type === 'text' ? (
+                  <div className="relative bg-neutral-950 border border-white/10 p-8 md:p-12 flex flex-col justify-center min-h-[300px]">
+                    <div className="space-y-6">
+                      <div className="w-12 h-px bg-white/20"></div>
+                      <p className="text-base md:text-lg font-sans text-neutral-400 leading-relaxed">
+                        {item.description.text.split(item.description.highlight1)[0]}
+                        <span style={{color: item.description.color1}}>{item.description.highlight1}</span>
+                        {item.description.text.split(item.description.highlight1)[1].split(item.description.highlight2)[0]}
+                        <span style={{color: item.description.color2}}>{item.description.highlight2}</span>
+                        {item.description.text.split(item.description.highlight2)[1]}
+                      </p>
+                      <div className="flex gap-2">
+                        <div className="w-2 h-2 rounded-full" style={{backgroundColor: item.description.color1}}></div>
+                        <div className="w-2 h-2 rounded-full" style={{backgroundColor: item.description.color2}}></div>
+                        <div className="w-2 h-2 rounded-full bg-white/20"></div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
             <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500">
               <video
-                src={video.src}
+                src={item.src}
                 autoPlay
                 loop
                 muted
@@ -360,7 +406,8 @@ const VideoPortfolio = () => {
                 </div>
               </div>
             </div>
-          </Reveal>
+                )}
+              </Reveal>
             ))}
           </div>
         </div>
