@@ -216,7 +216,7 @@ const Hero = ({ lang }) => {
         </Reveal>
         <Reveal delay={400}>
           <div className="flex flex-col md:flex-row items-start md:items-baseline gap-8">
-            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em", color: '#FF9F7A'}}>
+            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em", color: '#E8734E'}}>
               {lang === 'en' ? 'FICTION.' : 'A LA FICCIÓN.'}
             </h1>
             <p className="max-w-md text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase mt-4 md:mt-0">
@@ -224,13 +224,13 @@ const Hero = ({ lang }) => {
                  {lang === 'en' ? (
                    <>// <span style={{color: '#A4C997'}}>001</span>. The Product</>
                  ) : (
-                   <>// <span style={{color: '#FF9F7A'}}>001</span>. El Producto</>
+                   <>// <span style={{color: '#E8734E'}}>001</span>. El Producto</>
                  )}
                </span>
                {lang === 'en' ? (
-                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#FF9F7A'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
+                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#E8734E'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
                ) : (
-                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#FF9F7A'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
+                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#E8734E'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
                )}
             </p>
           </div>
@@ -398,9 +398,9 @@ const Footer = ({ lang }) => {
            <Reveal>
              <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white mb-8 leading-[0.8]">
                {lang === 'en' ? (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#FF9F7A'}}>Build</span> It.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8734E'}}>Build</span> It.</span></>
                ) : (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#FF9F7A'}}>Crear</span>lo.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8734E'}}>Crear</span>lo.</span></>
                )}
              </h2>
            </Reveal>
@@ -422,7 +422,7 @@ const Footer = ({ lang }) => {
                  <div className="w-full h-32 bg-neutral-900 border border-white/10 flex items-center justify-center p-4 text-center">
                     <span className="text-[10px] font-mono text-neutral-600 uppercase whitespace-pre-line">
                        {lang === 'en' ? (
-                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: '#FF9F7A'}}>impossible</span>.</>
+                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: '#E8734E'}}>impossible</span>.</>
                        ) : (
                          <>Somos los <span style={{color: '#A4C997'}}>arquitectos</span><br/>de lo <span style={{color: '#FFDB6D'}}>imposible</span>.</>
                        )}
