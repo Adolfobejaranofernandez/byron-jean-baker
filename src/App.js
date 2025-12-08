@@ -279,12 +279,11 @@ const Manifesto = ({ lang }) => {
 
 const VideoPortfolio = () => {
   const videos = [
-    { id: 1, src: '/videos/virgin-mary-crown.mp4', title: 'Virgin Mary Crown' },
-    { id: 2, src: '/videos/mysterious-figure.mp4', title: 'Mysterious Figure' },
-    { id: 3, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
-    { id: 4, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
-    { id: 5, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
-    { id: 6, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' }
+    { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
+    { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
+    { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
+    { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
+    { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
   ];
 
   return (
