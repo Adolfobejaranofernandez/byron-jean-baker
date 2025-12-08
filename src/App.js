@@ -321,10 +321,10 @@ const VideoPortfolio = () => {
         </div>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black">
         {videos.map((video, index) => (
           <Reveal key={video.id} delay={index * 100}>
-            <div className="relative group cursor-pointer overflow-hidden border border-white/10 hover:border-white/50 transition-all duration-500">
+            <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500">
               <video
                 src={video.src}
                 autoPlay
