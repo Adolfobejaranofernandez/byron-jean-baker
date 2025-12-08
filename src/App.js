@@ -302,27 +302,46 @@ const Manifesto = ({ lang }) => {
 };
 
 const VideoPortfolio = () => {
-  const videos = [
-    { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
-    { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
-    { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
-    { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
-    { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
+  const categories = [
+    {
+      title: 'Sacred Aesthetics',
+      subtitle: 'Religious Iconography',
+      videos: [
+        { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
+        { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
+        { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
+        { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
+        { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
+      ]
+    },
+    {
+      title: 'Haute Visions',
+      subtitle: 'Fashion Films',
+      videos: [
+        { id: 6, src: '/videos/fashion-lunar.mp4', title: 'Lunar' },
+        { id: 7, src: '/videos/fashion-desert-01.mp4', title: 'Desert 01' },
+        { id: 8, src: '/videos/fashion-desert-02.mp4', title: 'Desert 02' },
+        { id: 9, src: '/videos/fashion-walking.mp4', title: 'Walking' },
+        { id: 10, src: '/videos/fashion-robots.mp4', title: 'Robots' }
+      ]
+    }
   ];
 
   return (
     <section className="py-32 px-4 md:px-12 border-b border-white/10">
-      <Reveal>
-        <div className="relative z-10 flex justify-between items-end mb-24">
-          <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
-            Sacred <span style={{color: '#FFDB6D'}}>Aesthetics</span>
-          </h3>
-          <span className="text-xs font-mono text-neutral-500">Religious Iconography</span>
-        </div>
-      </Reveal>
+      {categories.map((category, catIndex) => (
+        <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
+          <Reveal>
+            <div className="relative z-10 flex justify-between items-end mb-24">
+              <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
+                {category.title.split(' ')[0]} <span style={{color: '#FFDB6D'}}>{category.title.split(' ')[1]}</span>
+              </h3>
+              <span className="text-xs font-mono text-neutral-500">{category.subtitle}</span>
+            </div>
+          </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black">
-        {videos.map((video, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black">
+            {category.videos.map((video, index) => (
           <Reveal key={video.id} delay={index * 100}>
             <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500">
               <video
@@ -342,8 +361,10 @@ const VideoPortfolio = () => {
               </div>
             </div>
           </Reveal>
-        ))}
-      </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </section>
   );
 };
