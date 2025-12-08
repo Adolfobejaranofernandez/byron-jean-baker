@@ -216,25 +216,25 @@ const Hero = ({ lang }) => {
         </Reveal>
         <Reveal delay={400}>
           <div className="flex flex-col md:flex-row items-start md:items-baseline gap-8">
-            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter">
+            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em"}}>
               {lang === 'en' ? (
-                <span style={{color: '#D9895C'}}>FICTION.</span>
+                <span style={{color: '#F0A070'}}>FICTION.</span>
               ) : (
-                <>A LA <span style={{color: '#D9895C'}}>FICCIÓN.</span></>
+                <>A LA <span style={{color: '#F0A070'}}>FICCIÓN.</span></>
               )}
             </h1>
             <p className="max-w-md text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase mt-4 md:mt-0">
                <span className="text-white block mb-2">
                  {lang === 'en' ? (
-                   <>// <span style={{color: '#D9895C'}}>001</span>. The Product</>
+                   <>// <span style={{color: '#F0A070'}}>001</span>. The Product</>
                  ) : (
-                   <>// <span style={{color: '#D9895C'}}>001</span>. El Producto</>
+                   <>// <span style={{color: '#F0A070'}}>001</span>. El Producto</>
                  )}
                </span>
                {lang === 'en' ? (
-                 <>We engineer <span style={{color: '#E8D7A0'}}>Holly</span>wood-grade video campaigns without a single physical camera. Your <span style={{color: '#D9895C'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A8C69F'}}>8K</span> reality.</>
+                 <>We engineer <span style={{color: '#E8D7A0'}}>Holly</span>wood-grade video campaigns without a single physical camera. Your <span style={{color: '#F0A070'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A8C69F'}}>8K</span> reality.</>
                ) : (
-                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#E8D7A0'}}>Holly</span>wood sin usar una sola cámara física. Tus ideas <span style={{color: '#D9895C'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A8C69F'}}>8K</span>.</>
+                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#E8D7A0'}}>Holly</span>wood sin usar una sola cámara física. Tus ideas <span style={{color: '#F0A070'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A8C69F'}}>8K</span>.</>
                )}
             </p>
           </div>
@@ -279,9 +279,9 @@ const Manifesto = ({ lang }) => {
            <Reveal delay={200}>
              <p className="text-2xl md:text-5xl font-bold uppercase tracking-tight text-white mb-8 leading-none">
                {lang === 'en' ? (
-                 <>Traditional production is <span style={{color: '#D9895C'}}>slow</span>, expensive, and bound by gravity. We are <span style={{color: '#A8C69F'}}>not</span>.</>
+                 <>Traditional production is <span style={{color: '#F0A070'}}>slow</span>, expensive, and bound by gravity. We are <span style={{color: '#A8C69F'}}>not</span>.</>
                ) : (
-                 <>La producción tradicional es <span style={{color: '#D9895C'}}>lenta</span>, cara y está atada a la gravedad. Nosotros <span style={{color: '#A8C69F'}}>no</span>.</>
+                 <>La producción tradicional es <span style={{color: '#F0A070'}}>lenta</span>, cara y está atada a la gravedad. Nosotros <span style={{color: '#A8C69F'}}>no</span>.</>
                )}
              </p>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-white/10 pt-8">
@@ -293,7 +293,7 @@ const Manifesto = ({ lang }) => {
                  )}
                </p>
                <div className="bg-neutral-900 p-6 font-mono text-xs text-neutral-500 space-y-2 uppercase">
-                  <div className="flex justify-between"><span>{t.specs.s1}</span><span style={{color: '#D9895C'}}>{t.specs.v1}</span></div>
+                  <div className="flex justify-between"><span>{t.specs.s1}</span><span style={{color: '#F0A070'}}>{t.specs.v1}</span></div>
                   <div className="flex justify-between"><span>{t.specs.s2}</span><span style={{color: '#A8C69F'}}>{t.specs.v2}</span></div>
                   <div className="flex justify-between"><span>{t.specs.s3}</span><span style={{color: '#E8D7A0'}}>{t.specs.v3}</span></div>
                </div>
@@ -402,9 +402,9 @@ const Footer = ({ lang }) => {
            <Reveal>
              <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white mb-8 leading-[0.8]">
                {lang === 'en' ? (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#D9895C'}}>Build</span> It.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#F0A070'}}>Build</span> It.</span></>
                ) : (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#D9895C'}}>Crear</span>lo.</span></>
+                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#F0A070'}}>Crear</span>lo.</span></>
                )}
              </h2>
            </Reveal>
