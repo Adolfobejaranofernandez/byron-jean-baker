@@ -228,9 +228,9 @@ const Hero = ({ lang }) => {
                  )}
                </span>
                {lang === 'en' ? (
-                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: .#FF9F7A.}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
+                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#FF9F7A'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
                ) : (
-                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#FFDB6D'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
+                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#FF9F7A'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
                )}
             </p>
           </div>
