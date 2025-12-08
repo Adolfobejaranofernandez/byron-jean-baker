@@ -422,7 +422,7 @@ const Footer = ({ lang }) => {
                  <div className="w-full h-32 bg-neutral-900 border border-white/10 flex items-center justify-center p-4 text-center">
                     <span className="text-[10px] font-mono text-neutral-600 uppercase whitespace-pre-line">
                        {lang === 'en' ? (
-                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: .#FF9F7A.}}>impossible</span>.</>
+                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: '#FF9F7A'}}>impossible</span>.</>
                        ) : (
                          <>Somos los <span style={{color: '#A4C997'}}>arquitectos</span><br/>de lo <span style={{color: '#FFDB6D'}}>imposible</span>.</>
                        )}
