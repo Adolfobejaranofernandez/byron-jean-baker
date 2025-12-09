@@ -201,25 +201,25 @@ const Hero = ({ lang }) => {
             <Square size={8} className="fill-white" />
             <span className="text-[10px] font-mono uppercase tracking-[0.3em]">
               {lang === 'en' ? (
-                <>ALGORITHMIC <span style={{color: '#FFDB6D'}}>CINEMA</span> STUDIO</>
+                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID</>
               ) : (
-                <>ESTUDIO DE <span style={{color: '#FFDB6D'}}>CINE</span> ALGORÍTMICO</>
+                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID</>
               )}
             </span>
           </div>
         </Reveal>
         
         <Reveal delay={200}>
-          <h1 className="text-[14vw] leading-[0.85] font-black tracking-tighter text-white uppercase mix-blend-overlay">
-            {t.title_1}
+          <h1 className="text-[12vw] md:text-[10vw] leading-[0.85] font-black tracking-tighter text-white uppercase">
+            {lang === 'en' ? (
+              <>ALGORITHMIC<br/><span style={{color: '#E8734E'}}>CINEMA</span> STUDIO</>
+            ) : (
+              <>ESTUDIO DE<br/><span style={{color: '#E8734E'}}>CINE</span> ALGORÍTMICO</>
+            )}
           </h1>
         </Reveal>
         <Reveal delay={400}>
-          <div className="flex flex-col md:flex-row items-start md:items-baseline gap-8">
-            <h1 className="text-[14vw] leading-[0.85] font-serif italic font-light tracking-tighter" style={{letterSpacing: "-.05em", color: '#E8734E'}}>
-              {lang === 'en' ? 'FICTION.' : 'A LA FICCIÓN.'}
-            </h1>
-            <p className="max-w-md text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase mt-4 md:mt-0">
+            <p className="max-w-md text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase mt-8">
                <span className="text-white block mb-2">
                  {lang === 'en' ? (
                    <>// <span style={{color: '#A4C997'}}>001</span>. The Product</>
@@ -233,7 +233,6 @@ const Hero = ({ lang }) => {
                  <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#E8734E'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
                )}
             </p>
-          </div>
         </Reveal>
       </div>
 
@@ -273,6 +272,15 @@ const Manifesto = ({ lang }) => {
         </div>
         <div className="md:col-span-8 flex flex-col justify-end">
            <Reveal delay={200}>
+             <div className="border-l-4 border-white pl-6 mb-12">
+               <h3 className="text-4xl md:text-6xl font-serif italic text-white leading-tight">
+                 {lang === 'en' ? (
+                   <>Form Follows <span style={{color: '#E8734E'}}>Fiction</span>.</>
+                 ) : (
+                   <>La Forma Sigue a la <span style={{color: '#E8734E'}}>Ficción</span>.</>
+                 )}
+               </h3>
+             </div>
              <p className="text-2xl md:text-5xl font-bold uppercase tracking-tight text-white mb-8 leading-none">
                {lang === 'en' ? (
                  <>Traditional production is slow, expensive, and bound by <span style={{color: '#FFDB6D'}}>gravity</span>. We are <span style={{color: '#A4C997'}}>not</span>.</>
