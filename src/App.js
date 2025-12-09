@@ -371,7 +371,7 @@ const VideoPortfolio = () => {
             {getItemsWithTextCard(category).map((item, index) => (
               <Reveal key={item.id} delay={index * 100}>
                 {item.type === 'text' ? (
-                  <div className="relative bg-neutral-950 border border-white/10 p-8 md:p-12 flex flex-col justify-center min-h-[300px]">
+                  <div className="relative bg-neutral-950 border-none p-8 md:p-12 flex flex-col justify-center aspect-video">
                     <div className="space-y-6">
                       <div className="w-12 h-px bg-white/20"></div>
                       <p className="text-sm md:text-base font-mono text-neutral-500 leading-relaxed uppercase">
@@ -389,7 +389,7 @@ const VideoPortfolio = () => {
                     </div>
                   </div>
                 ) : (
-            <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500">
+            <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500 bg-black">
               <video
                 src={item.src}
                 autoPlay
