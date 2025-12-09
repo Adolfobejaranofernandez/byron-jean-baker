@@ -313,25 +313,6 @@ const Manifesto = ({ lang }) => {
 const VideoPortfolio = () => {
   const categories = [
     {
-      title: 'Abyssal Portraits',
-      subtitle: 'Cephalopod Hybrids',
-      description: {
-        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
-        highlight1: 'intelligence',
-        highlight2: 'consciousness',
-        color1: '#A4C997',
-        color2: '#E8734E'
-      },
-      videos: [
-        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
-        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
-        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
-        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
-        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
-      ],
-      textCardPosition: 0 // Random position 0-5
-    },
-    {
       title: 'Haute Visions',
       subtitle: 'Fashion Films',
       description: {
@@ -349,6 +330,25 @@ const VideoPortfolio = () => {
         { id: 10, src: '/videos/fashion-new-05.mp4', title: 'Frozen' }
       ],
       textCardPosition: 4 // Random position 0-5
+    },
+    {
+      title: 'Abyssal Portraits',
+      subtitle: 'Cephalopod Hybrids',
+      description: {
+        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
+        highlight1: 'intelligence',
+        highlight2: 'consciousness',
+        color1: '#A4C997',
+        color2: '#E8734E'
+      },
+      videos: [
+        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
+        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
+        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
+        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
+        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
+      ],
+      textCardPosition: 0 // Random position 0-5
     },
     {
       title: 'Mythic Forms',
@@ -414,7 +414,7 @@ const VideoPortfolio = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-black">
             {getItemsWithTextCard(category).map((item, index) => (
               <Reveal key={item.id} delay={index * 100}>
                 {item.type === 'text' ? (
