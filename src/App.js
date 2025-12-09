@@ -201,9 +201,9 @@ const Hero = ({ lang }) => {
             <Square size={8} className="fill-white" />
             <span className="text-[10px] font-mono uppercase tracking-[0.3em]">
               {lang === 'en' ? (
-                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID</>
+                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID · MIAMI · SHANGHAI</>
               ) : (
-                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID</>
+                <>EST. <span style={{color: '#FFDB6D'}}>2025</span> / MADRID · MIAMI · SHANGHÁI</>
               )}
             </span>
           </div>
@@ -228,9 +228,9 @@ const Hero = ({ lang }) => {
                  )}
                </span>
                {lang === 'en' ? (
-                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#E8734E'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>8K</span> reality.</>
+                 <>We engineer <span style={{color: '#FFDB6D'}}>Hollywood</span>-grade video campaigns without a single physical camera. Your <span style={{color: '#E8734E'}}>impossible</span> ideas, finally rendered in <span style={{color: '#A4C997'}}>cinema-grade</span> reality.</>
                ) : (
-                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#E8734E'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>8K</span>.</>
+                 <>Ingeniería de vídeo publicitario nivel <span style={{color: '#FFDB6D'}}>Hollywood</span> sin usar una sola cámara física. Tus ideas <span style={{color: '#E8734E'}}>imposibles</span>, por fin renderizadas en realidad <span style={{color: '#A4C997'}}>cinematográfica</span>.</>
                )}
             </p>
         </Reveal>
@@ -300,6 +300,7 @@ const Manifesto = ({ lang }) => {
                   <div className="flex justify-between"><span>{t.specs.s1}</span><span style={{color: '#FFDB6D'}}>{t.specs.v1}</span></div>
                   <div className="flex justify-between"><span>{t.specs.s2}</span><span style={{color: '#A4C997'}}>{t.specs.v2}</span></div>
                   <div className="flex justify-between"><span>{t.specs.s3}</span><span style={{color: '#FFDB6D'}}>{t.specs.v3}</span></div>
+                  <div className="flex justify-between"><span>{lang === 'en' ? 'Output' : 'Resolución'}</span><span style={{color: '#A4C997'}}>Up to 4K</span></div>
                </div>
              </div>
            </Reveal>
@@ -341,11 +342,11 @@ const VideoPortfolio = () => {
         color2: '#A4C997'
       },
       videos: [
-        { id: 6, src: '/videos/fashion-lunar.mp4', title: 'Lunar' },
-        { id: 7, src: '/videos/fashion-desert-01.mp4', title: 'Desert 01' },
-        { id: 8, src: '/videos/fashion-desert-02.mp4', title: 'Desert 02' },
-        { id: 9, src: '/videos/fashion-walking.mp4', title: 'Walking' },
-        { id: 10, src: '/videos/fashion-robots.mp4', title: 'Robots' }
+        { id: 6, src: '/videos/fashion-new-01.mp4', title: 'Catwalk 01' },
+        { id: 7, src: '/videos/fashion-new-02.mp4', title: 'Catwalk 02' },
+        { id: 8, src: '/videos/fashion-new-03.mp4', title: 'Futuristic' },
+        { id: 9, src: '/videos/fashion-new-04.mp4', title: 'Robots' },
+        { id: 10, src: '/videos/fashion-new-05.mp4', title: 'Frozen' }
       ],
       textCardPosition: 4 // Random position 0-5
     },
