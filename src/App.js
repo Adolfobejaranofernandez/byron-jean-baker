@@ -436,14 +436,14 @@ const VideoPortfolio = () => {
                     </div>
                   </div>
                 ) : (
-            <div className="relative group cursor-pointer overflow-hidden bg-black">
+            <div className="relative group cursor-pointer overflow-hidden bg-black aspect-video">
               <video
                 src={item.src}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto object-cover transition-opacity duration-500 group-hover:opacity-70"
+                className="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-70"
               />
             </div>
                 )}
