@@ -340,6 +340,25 @@ const VideoPortfolio = () => {
         { id: 10, src: '/videos/fashion-robots.mp4', title: 'Robots' }
       ],
       textCardPosition: 4 // Random position 0-5
+    },
+    {
+      title: 'Mythic Forms',
+      subtitle: 'Subaquatic Entities',
+      description: {
+        text: 'Pre-Columbian deities reimagined beneath impossible oceans. Scales, feathers, and digital mythology converge in depths beyond reach.',
+        highlight1: 'deities',
+        highlight2: 'digital',
+        color1: '#E8734E',
+        color2: '#FFDB6D'
+      },
+      videos: [
+        { id: 11, src: '/videos/creature-feathers.mp4', title: 'Feathers' },
+        { id: 12, src: '/videos/creature-tentacles-01.mp4', title: 'Tentacles 01' },
+        { id: 13, src: '/videos/creature-tentacles-02.mp4', title: 'Tentacles 02' },
+        { id: 14, src: '/videos/creature-aztec.mp4', title: 'Aztec' },
+        { id: 15, src: '/videos/creature-bubbles.mp4', title: 'Bubbles' }
+      ],
+      textCardPosition: 1 // Random position 0-5
     }
   ];
 
@@ -389,22 +408,15 @@ const VideoPortfolio = () => {
                     </div>
                   </div>
                 ) : (
-            <div className="relative group cursor-pointer overflow-hidden hover:opacity-90 transition-all duration-500 bg-black">
+            <div className="relative group cursor-pointer overflow-hidden bg-black">
               <video
                 src={item.src}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-auto object-cover transition-opacity duration-500 group-hover:opacity-70"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="w-16 h-16 border border-white rounded-full flex items-center justify-center">
-                    <ArrowRight size={24} className="text-white" />
-                  </div>
-                </div>
-              </div>
             </div>
                 )}
               </Reveal>
