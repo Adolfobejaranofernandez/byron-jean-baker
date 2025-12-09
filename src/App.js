@@ -343,8 +343,8 @@ const VideoPortfolio = () => {
       },
       videos: [
         { id: 6, src: '/videos/fashion-new-01.mp4', title: 'Catwalk 01' },
-        { id: 7, src: '/videos/fashion-new-02.mp4', title: 'Catwalk 02' },
-        { id: 8, src: '/videos/fashion-new-03.mp4', title: 'Futuristic' },
+        { id: 7, src: '/videos/fashion-new-03.mp4', title: 'Futuristic' },
+        { id: 8, src: '/videos/fashion-new-02.mp4', title: 'Catwalk 02' },
         { id: 9, src: '/videos/fashion-new-04.mp4', title: 'Robots' },
         { id: 10, src: '/videos/fashion-new-05.mp4', title: 'Frozen' }
       ],
