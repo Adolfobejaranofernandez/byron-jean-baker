@@ -312,23 +312,23 @@ const Manifesto = ({ lang }) => {
 const VideoPortfolio = () => {
   const categories = [
     {
-      title: 'Sacred Aesthetics',
-      subtitle: 'Religious Iconography',
+      title: 'Abyssal Portraits',
+      subtitle: 'Cephalopod Hybrids',
       description: {
-        text: 'Ceremonial narratives where divinity meets dust. Each frame echoes ancient rituals reimagined through algorithmic devotion.',
-        highlight1: 'divinity',
-        highlight2: 'algorithmic',
-        color1: '#FFDB6D',
-        color2: '#A4C997'
+        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
+        highlight1: 'intelligence',
+        highlight2: 'consciousness',
+        color1: '#A4C997',
+        color2: '#E8734E'
       },
       videos: [
-        { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
-        { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
-        { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
-        { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
-        { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
+        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
+        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
+        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
+        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
+        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
       ],
-      textCardPosition: 2 // Random position 0-5
+      textCardPosition: 0 // Random position 0-5
     },
     {
       title: 'Haute Visions',
@@ -369,23 +369,23 @@ const VideoPortfolio = () => {
       textCardPosition: 1 // Random position 0-5
     },
     {
-      title: 'Abyssal Portraits',
-      subtitle: 'Cephalopod Hybrids',
+      title: 'Sacred Aesthetics',
+      subtitle: 'Religious Iconography',
       description: {
-        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
-        highlight1: 'intelligence',
-        highlight2: 'consciousness',
-        color1: '#A4C997',
-        color2: '#E8734E'
+        text: 'Ceremonial narratives where divinity meets dust. Each frame echoes ancient rituals reimagined through algorithmic devotion.',
+        highlight1: 'divinity',
+        highlight2: 'algorithmic',
+        color1: '#FFDB6D',
+        color2: '#A4C997'
       },
       videos: [
-        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
-        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
-        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
-        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
-        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
+        { id: 1, src: '/videos/desert-night-01.mp4', title: 'Desert Night 01' },
+        { id: 2, src: '/videos/desert-night-02.mp4', title: 'Desert Night 02' },
+        { id: 3, src: '/videos/desert-night-03.mp4', title: 'Desert Night 03' },
+        { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
+        { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
       ],
-      textCardPosition: 0 // Random position 0-5
+      textCardPosition: 2 // Random position 0-5
     }
   ];
 
