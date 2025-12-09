@@ -501,9 +501,9 @@ const Work = ({ lang }) => {
         <div className="border-t border-white/10 pt-16">
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 lg:gap-20">
             <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-14 md:h-18 lg:h-20 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="h-18 md:h-22 lg:h-26 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="h-18 md:h-22 lg:h-26 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
             <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
           </div>
         </div>
