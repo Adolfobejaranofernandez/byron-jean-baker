@@ -395,6 +395,25 @@ const VideoPortfolio = () => {
         { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
       ],
       textCardPosition: 2 // Random position 0-5
+    },
+    {
+      title: 'Red Queens',
+      subtitle: 'Baroque Madonnas',
+      description: {
+        text: 'Divine figures crowned in roses. Baroque splendor meets contemporary vision where sacred iconography blooms in crimson devotion.',
+        highlight1: 'roses',
+        highlight2: 'crimson',
+        color1: '#E8734E',
+        color2: '#FFDB6D'
+      },
+      videos: [
+        { id: 21, src: '/videos/red-queen-01.mp4', title: 'Red Queen 01' },
+        { id: 22, src: '/videos/red-queen-02.mp4', title: 'Red Queen 02' },
+        { id: 23, src: '/videos/red-queen-03.mp4', title: 'Red Queen 03' },
+        { id: 24, src: '/videos/red-queen-04.mp4', title: 'Red Queen 04' },
+        { id: 25, src: '/videos/red-queen-05.mp4', title: 'Red Queen 05' }
+      ],
+      textCardPosition: 3 // Random position 0-5
     }
   ];
 
