@@ -469,7 +469,7 @@ const Work = ({ lang }) => {
   return (
     <section id="work" className="py-32 px-4 md:px-12 border-b border-white/10">
       <Reveal>
-        <div className="relative z-10 flex justify-between items-end mb-12">
+        <div className="relative z-10 flex justify-between items-end mb-16">
            <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
              {t.title}
            </h3>
@@ -477,34 +477,49 @@ const Work = ({ lang }) => {
         </div>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
-        <div className="md:col-span-8">
-          <Reveal delay={200}>
-            <p className="text-lg md:text-xl text-neutral-400 leading-relaxed mb-8">
-              {t.intro}
-            </p>
-            <p className="text-sm font-mono text-neutral-500 uppercase tracking-wider mb-4">
-              {t.regions}
-            </p>
-            <p className="text-sm text-neutral-600 italic mb-6">
-              {t.notable}
-            </p>
-            <p className="text-xs font-mono text-neutral-500 uppercase tracking-widest">
-              {t.roles}
-            </p>
-          </Reveal>
-        </div>
+      {/* Copy with colors */}
+      <div className="mb-16">
+        <Reveal delay={200}>
+          <p className="text-base md:text-lg font-mono text-neutral-500 leading-relaxed uppercase max-w-4xl">
+            {lang === 'en' ? (
+              <><span style={{color: '#A4C997'}}>15 years</span> directing campaigns for <span style={{color: '#FFDB6D'}}>global brands</span> across 6 markets. Full-spectrum production from concept to delivery: music industry, product launches, festival visuals, broadcast content. <span style={{color: '#E8734E'}}>Stadium concerts</span>. <span style={{color: '#E8734E'}}>National broadcast</span>. City installations.</>
+            ) : (
+              <><span style={{color: '#A4C997'}}>15 años</span> dirigiendo campañas para <span style={{color: '#FFDB6D'}}>marcas globales</span> en 6 mercados. Producción integral desde concepto hasta entrega: industria musical, lanzamientos de producto, visuales para festivales, contenido broadcast. <span style={{color: '#E8734E'}}>Conciertos en estadios</span>. <span style={{color: '#E8734E'}}>TV nacional</span>. Instalaciones urbanas.</>
+            )}
+          </p>
+          <p className="text-xs font-mono text-neutral-600 uppercase tracking-widest mt-6">
+            {t.regions}
+          </p>
+          <p className="text-xs font-mono text-neutral-600 uppercase tracking-widest mt-3">
+            {t.roles}
+          </p>
+        </Reveal>
       </div>
 
-      {/* Logo Grid */}
+      {/* Logo Grid - Square containers */}
       <Reveal delay={400}>
-        <div className="border-t border-white/10 pt-16">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
-            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
-            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
-            <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
-            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
-            <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 bg-black">
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
+            <div className="text-center">
+              <p className="text-xs font-mono text-neutral-600 uppercase tracking-widest">
+                {lang === 'en' ? 'More Clients' : 'Más Clientes'}
+              </p>
+            </div>
           </div>
         </div>
       </Reveal>
