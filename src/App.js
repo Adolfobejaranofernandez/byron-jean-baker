@@ -359,6 +359,25 @@ const VideoPortfolio = () => {
         { id: 15, src: '/videos/creature-bubbles.mp4', title: 'Bubbles' }
       ],
       textCardPosition: 1 // Random position 0-5
+    },
+    {
+      title: 'Abyssal Portraits',
+      subtitle: 'Cephalopod Hybrids',
+      description: {
+        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
+        highlight1: 'intelligence',
+        highlight2: 'consciousness',
+        color1: '#A4C997',
+        color2: '#E8734E'
+      },
+      videos: [
+        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
+        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
+        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
+        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
+        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
+      ],
+      textCardPosition: 0 // Random position 0-5
     }
   ];
 
