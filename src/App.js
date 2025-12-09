@@ -496,30 +496,15 @@ const Work = ({ lang }) => {
         </Reveal>
       </div>
 
-      {/* Logo Grid - Square containers */}
+      {/* Logo Strip - Horizontal, Large */}
       <Reveal delay={400}>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 bg-black">
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-          </div>
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-          </div>
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-          </div>
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-          </div>
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="w-full h-auto max-h-16 object-contain" style={{filter: 'grayscale(1) opacity(0.7)'}} />
-          </div>
-          <div className="aspect-square bg-neutral-950 border border-white/10 flex items-center justify-center p-8">
-            <div className="text-center">
-              <p className="text-xs font-mono text-neutral-600 uppercase tracking-widest">
-                {lang === 'en' ? 'More Clients' : 'Más Clientes'}
-              </p>
-            </div>
+        <div className="border-t border-white/10 pt-16">
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 lg:gap-20">
+            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
           </div>
         </div>
       </Reveal>
