@@ -31,8 +31,12 @@ const content = {
       }
     },
     work: {
-      title: "Commissioned Realities",
-      vol: "Vol. 2025",
+      title: "Premium Clients",
+      vol: "2010-2024",
+      intro: "15 years directing visual content for major brands across global markets. Full-spectrum production from concept to delivery: music industry campaigns, product launches, festival visuals, and broadcast content.",
+      regions: "Spain \u00b7 Latin America \u00b7 USA \u00b7 Italy \u00b7 Brazil \u00b7 China",
+      notable: "Stadium concerts. National broadcast. City installations.",
+      roles: "Director \u00b7 DOP \u00b7 Editor \u00b7 Post-Production \u00b7 Concept",
       projects: [
         { id: "01", title: "Cartier: Refraction", client: "Global TVC Campaign", year: "2025" },
         { id: "02", title: "Porsche: The Ghost", client: "Brand Heritage Film", year: "2024" },
@@ -43,8 +47,8 @@ const content = {
       title_main: "Let Us",
       title_sub: "Build It.",
       contact: "Initiate Project",
-      email: "architect@byronjeanbaker.ai",
-      loc: "Madrid / Cloud / Void",
+      email: "contact@byronjeanbaker.studio",
+      loc: "Madrid · Miami · Shanghai",
       box_text: "We are the architects\nof the impossible."
     }
   },
@@ -76,8 +80,12 @@ const content = {
       }
     },
     work: {
-      title: "Realidades Comisionadas",
-      vol: "Vol. 2025",
+      title: "Clientes Premium",
+      vol: "2010-2024",
+      intro: "15 años dirigiendo contenido visual para grandes marcas en mercados globales. Producción integral desde concepto hasta entrega: campañas industria musical, lanzamientos de producto, visuales para festivales y contenido broadcast.",
+      regions: "España · Latinoamérica · USA · Italia · Brasil · China",
+      notable: "Conciertos en estadios. TV nacional. Instalaciones urbanas.",
+      roles: "Director · DOP · Editor · Post-Producción · Concepto",
       projects: [
         { id: "01", title: "Cartier: Refracción", client: "Campaña TVC Global", year: "2025" },
         { id: "02", title: "Porsche: El Fantasma", client: "Film de Legado", year: "2024" },
@@ -88,8 +96,8 @@ const content = {
       title_main: "Déjanos",
       title_sub: "Crearlo.",
       contact: "Iniciar Proyecto",
-      email: "architect@byronjeanbaker.ai",
-      loc: "Madrid / Nube / Vacío",
+      email: "contact@byronjeanbaker.studio",
+      loc: "Madrid · Miami · Shanghái",
       box_text: "Somos los arquitectos\nde lo imposible."
     }
   }
@@ -461,10 +469,7 @@ const Work = ({ lang }) => {
   return (
     <section id="work" className="py-32 px-4 md:px-12 border-b border-white/10">
       <Reveal>
-        <h2 className="text-[10vw] font-black tracking-tighter text-neutral-900 uppercase leading-none select-none absolute left-0 right-0 text-center pointer-events-none">
-           Archive
-        </h2>
-        <div className="relative z-10 flex justify-between items-end mb-24">
+        <div className="relative z-10 flex justify-between items-end mb-12">
            <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
              {t.title}
            </h3>
@@ -472,27 +477,37 @@ const Work = ({ lang }) => {
         </div>
       </Reveal>
 
-      <div className="space-y-0">
-        {t.projects.map((project, index) => (
-          <Reveal key={project.id} delay={index * 150}>
-            <div className="group border-t border-white/20 py-12 md:py-20 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-white hover:text-black transition-colors duration-500 cursor-pointer px-4 -mx-4">
-               <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full">
-                  <span className="font-mono text-xs opacity-50">/{project.id}</span>
-                  <h4 className="text-4xl md:text-7xl font-light font-sans tracking-tight uppercase group-hover:italic transition-all">
-                    {project.title}
-                  </h4>
-               </div>
-               <div className="mt-4 md:mt-0 flex items-center gap-12 w-full md:w-auto justify-between md:justify-end">
-                  <div className="text-xs font-mono uppercase tracking-widest opacity-70 text-right">
-                     {project.client} <br/> {project.year}
-                  </div>
-                  <ArrowUpRight size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-               </div>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+        <div className="md:col-span-8">
+          <Reveal delay={200}>
+            <p className="text-lg md:text-xl text-neutral-400 leading-relaxed mb-8">
+              {t.intro}
+            </p>
+            <p className="text-sm font-mono text-neutral-500 uppercase tracking-wider mb-4">
+              {t.regions}
+            </p>
+            <p className="text-sm text-neutral-600 italic mb-6">
+              {t.notable}
+            </p>
+            <p className="text-xs font-mono text-neutral-500 uppercase tracking-widest">
+              {t.roles}
+            </p>
           </Reveal>
-        ))}
-        <div className="border-t border-white/20"></div>
+        </div>
       </div>
+
+      {/* Logo Grid */}
+      <Reveal delay={400}>
+        <div className="border-t border-white/10 pt-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
+            <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+            <img src="/thumbnails/bluegirl.png" alt="Blue Girl" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+            <img src="/thumbnails/Corona USA_id4rGQj9f6_0.png" alt="Corona" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+            <img src="/thumbnails/Sony Music_Logo_1.png" alt="Sony Music" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+            <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="h-8 md:h-10 w-auto" style={{filter: 'grayscale(1) opacity(0.5)'}} />
+          </div>
+        </div>
+      </Reveal>
     </section>
   );
 };
