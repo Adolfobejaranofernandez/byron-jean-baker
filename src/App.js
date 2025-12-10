@@ -220,6 +220,7 @@ const Hero = ({ lang }) => {
         loop
         muted
         playsInline
+        poster="/cover.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
         src="/videos/OS2.1 - HD 1080p.mov"
       />
