@@ -221,7 +221,7 @@ const Hero = ({ lang }) => {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/videos/OS2.1web2.mov"
+        src="/videos/OS2.1 - HD 1080p.mov"
       />
       
       {/* Sound Toggle Button */}
