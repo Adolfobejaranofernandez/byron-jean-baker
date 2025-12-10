@@ -289,7 +289,7 @@ const Hero = ({ lang }) => {
 const Manifesto = ({ lang }) => {
   const t = content[lang].manifesto;
   return (
-    <section id="philosophy" className="py-32 px-4 md:px-12 border-b border-white/10 relative">
+    <section id="philosophy" className="py-12 md:py-32 px-4 md:px-12 border-b border-white/10 relative">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
            <Reveal>
@@ -455,7 +455,7 @@ const VideoPortfolio = () => {
   };
 
   return (
-    <section className="py-32 px-4 md:px-12 border-b border-white/10">
+    <section className="py-12 md:py-32 px-4 md:px-12 border-b border-white/10">
       {categories.map((category, catIndex) => (
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
