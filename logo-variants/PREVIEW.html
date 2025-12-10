@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo ACS - Preview con Fuentes Correctas</title>
+    
+    <!-- Google Fonts - LAS MISMAS DE TU WEB -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #000000;
+            font-family: 'IBM Plex Mono', monospace;
+            color: #FFFFFF;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .variant {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+        
+        .variant-title {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-vertical {
+            text-align: center;
+        }
+        
+        .logo-horizontal {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .acs {
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.08em;
+            line-height: 1;
+        }
+        
+        .acs-large {
+            font-size: 96px;
+        }
+        
+        .acs-medium {
+            font-size: 72px;
+        }
+        
+        .acs .a { color: #A4C997; }
+        .acs .c { color: #E8734E; }
+        .acs .s { color: #FFDB6D; }
+        
+        .name {
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+        }
+        
+        .name-large {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        
+        .name-medium {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        
+        .name-horizontal {
+            font-size: 24px;
+        }
+        
+        .tagline {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 400;
+            color: #A3A3A3;
+            margin-top: 8px;
+        }
+        
+        .tagline-large {
+            font-size: 14px;
+        }
+        
+        .tagline-small {
+            font-size: 12px;
+        }
+        
+        .separator {
+            width: 2px;
+            height: 60px;
+            background: #FFFFFF;
+            opacity: 0.3;
+        }
+        
+        .logo-content {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Archivo Black', sans-serif; font-size: 32px; margin-bottom: 40px;">
+            LOGO <span style="color: #A4C997;">A</span><span style="color: #E8734E;">C</span><span style="color: #FFDB6D;">S</span> - PREVIEW
+        </h1>
+        
+        <!-- Variante 1: Vertical Stack -->
+        <div class="variant">
+            <div class="variant-title">01. Vertical Stack (Principal)</div>
+            <div class="logo-vertical">
+                <div class="acs acs-large">
+                    <span class="a">A</span><span class="c">C</span><span class="s">S</span>
+                </div>
+                <div class="name name-large">BYRON JEAN BAKER</div>
+                <div class="tagline tagline-large">Architecture of Dreams</div>
+            </div>
+        </div>
+        
+        <!-- Variante 2: Horizontal -->
+        <div class="variant">
+            <div class="variant-title">02. Horizontal</div>
+            <div class="logo-horizontal">
+                <div class="acs acs-medium">
+                    <span class="a">A</span><span class="c">C</span><span class="s">S</span>
+                </div>
+                <div class="separator"></div>
+                <div class="logo-content">
+                    <div class="name name-horizontal">BYRON JEAN BAKER</div>
+                    <div class="tagline tagline-small">Architecture of Dreams</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 3: Monograma Solo -->
+        <div class="variant">
+            <div class="variant-title">03. Monogram Only (Favicon / Profile Pic)</div>
+            <div class="logo-vertical">
+                <div class="acs acs-large">
+                    <span class="a">A</span><span class="c">C</span><span class="s">S</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 4: Compacta -->
+        <div class="variant">
+            <div class="variant-title">04. Compact (sin tagline)</div>
+            <div class="logo-vertical">
+                <div class="acs acs-medium">
+                    <span class="a">A</span><span class="c">C</span><span class="s">S</span>
+                </div>
+                <div class="name name-medium">BYRON JEAN BAKER</div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 80px; padding: 20px; background: #111; border-radius: 4px;">
+            <p style="font-size: 12px; color: #666; margin: 0;">
+                💡 Estas son las fuentes CORRECTAS de tu web:<br>
+                <span style="color: #A4C997;">• Archivo Black</span> (para ACS y BYRON JEAN BAKER)<br>
+                <span style="color: #FFDB6D;">• IBM Plex Mono</span> (para Architecture of Dreams)
+            </p>
+        </div>
+    </div>
+</body>
+</html>

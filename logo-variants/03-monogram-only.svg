@@ -1,0 +1,9 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo negro para preview -->
+  <rect width="200" height="200" fill="#000000"/>
+  
+  <!-- Solo ACS - Monograma grande -->
+  <text x="100" y="130" font-family="'Archivo Black', sans-serif" font-size="96" font-weight="900" text-anchor="middle" letter-spacing="-8">
+    <tspan fill="#A4C997">A</tspan><tspan fill="#E8734E">C</tspan><tspan fill="#FFDB6D">S</tspan>
+  </text>
+</svg>
