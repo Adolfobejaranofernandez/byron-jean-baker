@@ -220,9 +220,10 @@ const Hero = ({ lang }) => {
         loop
         muted
         playsInline
+        preload="auto"
         poster="/cover.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/videos/OS2.1 - HD 1080p.mov"
+        src="/videos/videoWeb.mp4"
       />
       
       {/* Sound Toggle Button */}
