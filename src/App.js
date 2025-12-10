@@ -236,7 +236,7 @@ const Hero = ({ lang }) => {
       </button>
       <div className="flex-grow flex flex-col justify-center relative z-10">
         <Reveal>
-          <div className="inline-flex items-center gap-3 border border-white/20 px-4 py-2 rounded-none mb-12">
+          <div className="inline-flex items-center gap-3 border border-white/20 px-4 py-2 rounded-none mb-2 md:mb-12">
             <Square size={8} className="fill-white" />
             <span className="text-[10px] font-mono uppercase tracking-[0.3em]">
               {lang === 'en' ? (
@@ -275,12 +275,7 @@ const Hero = ({ lang }) => {
         </Reveal>
       </div>
 
-      <div className="flex justify-between items-end relative z-10">
-         <Reveal delay={600}>
-            <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center animate-spin-slow">
-               <ArrowRight size={24} className="-rotate-45 text-white" />
-            </div>
-         </Reveal>
+      <div className="flex justify-end items-end relative z-10">
          <Reveal delay={800}>
             <a href="#contact" className="text-xs font-mono uppercase tracking-widest hover:bg-white hover:text-black px-6 py-3 border border-white/20 transition-colors">
                {t.cta}
