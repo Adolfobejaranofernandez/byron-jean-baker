@@ -224,7 +224,7 @@ const Hero = ({ lang }) => {
         src="/videos/OS2.1web2.mov"
       />
       {/* Dark Overlay for Text Legibility */}
-      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
       
       {/* Sound Toggle Button */}
       <button
