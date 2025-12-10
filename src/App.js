@@ -176,12 +176,13 @@ const Navbar = ({ lang, setLang }) => {
         <LanguageSwitch lang={lang} setLang={setLang} />
       </div>
 
-      <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
+      {/* Mobile menu button - TEMPORARILY DISABLED */}
+      {/* <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
         {menuOpen ? <X /> : <Menu />}
-      </button>
+      </button> */}
 
-      {/* Full Screen Menu */}
-      {menuOpen && (
+      {/* Full Screen Menu - TEMPORARILY DISABLED */}
+      {/* {menuOpen && (
         <div className="fixed inset-0 bg-black z-40 flex flex-col justify-center px-12">
            <div className="space-y-8">
              {[t.work, t.philosophy, t.services, t.contact].map(item => (
@@ -194,7 +195,7 @@ const Navbar = ({ lang, setLang }) => {
              <LanguageSwitch lang={lang} setLang={setLang} />
            </div>
         </div>
-      )}
+      )} */}
     </nav>
   );
 };
