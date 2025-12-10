@@ -15,7 +15,7 @@ const content = {
       tag: "ALGORITHMIC CINEMA STUDIO",
       title_1: "FORM FOLLOWS",
       title_2: "FICTION.",
-      subtitle: "We engineer Hollywood-grade video campaigns without a single physical camera. Your impossible ideas, finally rendered in 8K reality.",
+      subtitle: "We engineer Hollywood-grade cinematography without a single physical camera. Your impossible ideas, finally rendered in 8K reality.",
       cta: "Start Commission",
       vision: "// 001. The Product"
     },
@@ -64,7 +64,7 @@ const content = {
       tag: "ESTUDIO DE CINE ALGORÍTMICO",
       title_1: "LA FORMA SIGUE",
       title_2: "A LA FICCIÓN.",
-      subtitle: "Ingeniería de vídeo publicitario nivel Hollywood sin usar una sola cámara física. Tus ideas imposibles, por fin renderizadas en realidad 8K.",
+      subtitle: "Ingeniería cinematográfica nivel Hollywood sin usar una sola cámara física. Tus ideas imposibles, por fin renderizadas en realidad 8K.",
       cta: "Iniciar Encargo",
       vision: "// 001. El Producto"
     },
