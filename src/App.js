@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Menu, X, Globe, ArrowUpRight, Diamond, Circle, Square } from 'lucide-react';
+import { ArrowRight, Menu, X, Globe, ArrowUpRight, Diamond, Circle, Square, Volume2, VolumeX } from 'lucide-react';
 
 /* --- CONTENT DICTIONARY (EN/ES) --- */
 const content = {
@@ -201,8 +201,39 @@ const Navbar = ({ lang, setLang }) => {
 
 const Hero = ({ lang }) => {
   const t = content[lang].hero;
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col pt-32 pb-12 px-4 md:px-12 border-b border-white/10">
+      {/* Video Background */}
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/videos/OS2.1web2.mov"
+      />
+      {/* Dark Overlay for Text Legibility */}
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      
+      {/* Sound Toggle Button */}
+      <button
+        onClick={toggleMute}
+        className="fixed bottom-8 right-8 z-50 bg-white/10 hover:bg-white/20 border border-white/20 p-4 transition-colors backdrop-blur-sm"
+        aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+      >
+        {isMuted ? <VolumeX size={20} className="text-white" /> : <Volume2 size={20} className="text-white" />}
+      </button>
       <div className="flex-grow flex flex-col justify-center relative z-10">
         <Reveal>
           <div className="inline-flex items-center gap-3 border border-white/20 px-4 py-2 rounded-none mb-12">
