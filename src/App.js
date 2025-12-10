@@ -202,7 +202,18 @@ const Navbar = ({ lang, setLang }) => {
 const Hero = ({ lang }) => {
   const t = content[lang].hero;
   const [isMuted, setIsMuted] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const videoRef = useRef(null);
+
+  useEffect(() => {
+    // Detect mobile device
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -210,6 +221,8 @@ const Hero = ({ lang }) => {
       setIsMuted(!isMuted);
     }
   };
+
+  const videoSrc = isMobile ? '/videos/videoWeb-mobile.mp4' : '/videos/videoWeb.mp4';
 
   return (
     <section className="relative min-h-screen flex flex-col pt-32 pb-12 px-4 md:px-12 border-b border-white/10">
@@ -223,7 +236,7 @@ const Hero = ({ lang }) => {
         preload="auto"
         poster="/cover.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/videos/videoWeb.mp4"
+        src={videoSrc}
       />
       
       {/* Sound Toggle Button */}
