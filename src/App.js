@@ -184,18 +184,7 @@ const Navbar = ({ lang, setLang }) => {
 const Hero = ({ lang }) => {
   const t = content[lang].hero;
   const [isMuted, setIsMuted] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
   const videoRef = useRef(null);
-
-  useEffect(() => {
-    // Detect mobile device
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   const toggleMute = () => {
     if (videoRef.current) {
