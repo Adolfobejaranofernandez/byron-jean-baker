@@ -164,7 +164,7 @@ const Navbar = ({ lang, setLang }) => {
     <nav className="fixed top-0 w-full z-50 mix-blend-difference text-white py-6 md:py-8 px-4 md:px-12 flex justify-between items-start">
       <div className="flex flex-col gap-1">
         <a href="/" className="text-xl font-bold tracking-tighter uppercase font-sans leading-none block">Byron Jean Baker</a>
-        <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">Architecture of Dreams</span>
+        <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">AI-Powered Cinema by BJB</span>
       </div>
 
       <div className="hidden md:flex flex-col items-end gap-2">
@@ -443,11 +443,11 @@ const VideoPortfolio = () => {
       {categories.map((category, catIndex) => (
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
-            <div className="relative z-10 mb-8">
+            <div className="relative z-10 mb-4">
               <span className="text-xl font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 border-l-2 border-white/30 pl-4">
                 {category.subtitle}
               </span>
-              <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
+              <h3 className="text-xl font-mono uppercase tracking-widest text-white pl-4">
                 {category.title.split(' ')[0]} <span style={{color: '#FFDB6D'}}>{category.title.split(' ')[1]}</span>
               </h3>
             </div>
