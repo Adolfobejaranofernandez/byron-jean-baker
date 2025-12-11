@@ -444,10 +444,10 @@ const VideoPortfolio = () => {
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
             <div className="relative z-10 mb-4">
-              <span className="text-base font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 pl-4">
+              <span className="text-2xl font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 pl-4">
                 {category.subtitle}
               </span>
-              <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
+              <h3 className="text-base font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
                 {category.title.split(' ')[0]} <span style={{color: '#FFDB6D'}}>{category.title.split(' ')[1]}</span>
               </h3>
             </div>
@@ -561,117 +561,105 @@ const Footer = ({ lang }) => {
            </Reveal>
         </div>
 
-        {/* Right Column - Contact Info */}
-        <div>
+        {/* Right Column - Contact Info in 2 sub-columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+           {/* Personal / Key People */}
            <Reveal delay={200}>
-              {/* Let Us Build It Title */}
-              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white mb-12 leading-none">
-                {lang === 'en' ? (
-                  <>LET US <span style={{color: '#E8734E'}}>BUILD</span> IT.</>
-                ) : (
-                  <>DÉJANOS <span style={{color: '#E8734E'}}>CREARLO</span>.</>
-                )}
-              </h3>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8 leading-none">
+                  {lang === 'en' ? (
+                    <>LET US <span style={{color: '#E8734E'}}>BUILD</span> IT.</>
+                  ) : (
+                    <>DÉJANOS <span style={{color: '#E8734E'}}>CREARLO</span>.</>
+                  )}
+                </h3>
 
-              {/* Commissions Section */}
-              <div className="mb-8">
-                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
-                  {lang === 'en' ? 'Commissions' : 'Encargos'}
-                </h4>
-                <div className="space-y-4">
+                {/* Key People */}
+                <div className="space-y-6">
                   <div>
-                    <a href="mailto:contact@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      contact@byronjeanbaker.studio
+                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2 text-neutral-600">
+                      CEO
+                    </h4>
+                    <a href="mailto:bjb@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors">
+                      bjb@byronjeanbaker.studio
                     </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'General inquiries. First contact.' : 'Consultas generales. Primer contacto.'}
-                    </p>
                   </div>
-                  <div>
-                    <a href="mailto:projects@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      projects@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'New commissions. Pitch briefings.' : 'Nuevos encargos. Briefings.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-              {/* Departments Section */}
-              <div className="mb-8">
-                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
-                  {lang === 'en' ? 'Departments' : 'Departamentos'}
-                </h4>
-                <div className="space-y-4">
                   <div>
-                    <a href="mailto:commercials@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      commercials@byronjeanbaker.studio
+                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2 text-neutral-600">
+                      {lang === 'en' ? 'Production Designer / Creative Director' : 'Diseñador Producción / Director Creativo'}
+                    </h4>
+                    <a href="mailto:juan.marrero@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors">
+                      juan.marrero@byronjeanbaker.studio
                     </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Advertising spots. Brand campaigns.' : 'Spots publicitarios. Campañas de marca.'}
-                    </p>
                   </div>
-                  <div>
-                    <a href="mailto:fashion@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      fashion@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Editorial films. Runway visuals.' : 'Films editoriales. Visuales de pasarela.'}
-                    </p>
-                  </div>
-                  <div>
-                    <a href="mailto:musicvideo@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      musicvideo@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Performance narratives. Artist visuals.' : 'Narrativas de performance. Visuales artísticos.'}
-                    </p>
-                  </div>
-                  <div>
-                    <a href="mailto:cinema@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      cinema@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Narrative work. Experimental films.' : 'Trabajo narrativo. Cine experimental.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Operations Section */}
-              <div className="mb-8">
-                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
-                  {lang === 'en' ? 'Operations' : 'Operaciones'}
-                </h4>
-                <div className="space-y-4">
-                  <div>
-                    <a href="mailto:production@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      production@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Full-service execution. Logistics.' : 'Ejecución integral. Logística.'}
-                    </p>
-                  </div>
-                  <div>
-                    <a href="mailto:press@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
-                      press@byronjeanbaker.studio
-                    </a>
-                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
-                      {lang === 'en' ? 'Media inquiries. Press materials.' : 'Consultas de medios. Material de prensa.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bottom Info */}
-              <div className="pt-8 border-t border-white/10">
-                <div className="flex flex-col md:flex-row justify-between text-xs font-mono uppercase text-neutral-500 tracking-widest gap-2">
-                  <span>{t.loc}</span>
-                  <span>© 2025 BJB</span>
                 </div>
               </div>
            </Reveal>
+
+           {/* Departments (smaller) */}
+           <Reveal delay={400}>
+              <div className="space-y-6">
+                {/* Commissions */}
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{color: '#FFDB6D'}}>
+                    {lang === 'en' ? 'Commissions' : 'Encargos'}
+                  </h4>
+                  <div className="space-y-2">
+                    <a href="mailto:contact@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      contact@
+                    </a>
+                    <a href="mailto:projects@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      projects@
+                    </a>
+                  </div>
+                </div>
+
+                {/* Departments */}
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{color: '#FFDB6D'}}>
+                    {lang === 'en' ? 'Departments' : 'Departamentos'}
+                  </h4>
+                  <div className="space-y-2">
+                    <a href="mailto:commercials@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      commercials@
+                    </a>
+                    <a href="mailto:fashion@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      fashion@
+                    </a>
+                    <a href="mailto:musicvideo@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      musicvideo@
+                    </a>
+                    <a href="mailto:cinema@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      cinema@
+                    </a>
+                  </div>
+                </div>
+
+                {/* Operations */}
+                <div>
+                  <h4 className="text-[10px] font-mono uppercase tracking-widest mb-2" style={{color: '#FFDB6D'}}>
+                    {lang === 'en' ? 'Operations' : 'Operaciones'}
+                  </h4>
+                  <div className="space-y-2">
+                    <a href="mailto:production@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      production@
+                    </a>
+                    <a href="mailto:press@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      press@
+                    </a>
+                  </div>
+                </div>
+              </div>
+           </Reveal>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-16 pt-8 border-t border-white/10">
+        <div className="flex flex-col md:flex-row justify-between text-xs font-mono uppercase text-neutral-500 tracking-widest gap-2">
+          <span>{t.loc}</span>
+          <span>© 2025 BJB</span>
         </div>
       </div>
     </footer>
