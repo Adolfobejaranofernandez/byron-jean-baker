@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Menu, X, Globe, ArrowUpRight, Diamond, Circle, Square, Volume2, VolumeX } from 'lucide-react';
+import { Globe, Circle, Square, Volume2, VolumeX } from 'lucide-react';
 
 /* --- CONTENT DICTIONARY (EN/ES) --- */
 const content = {
@@ -114,10 +114,11 @@ const useOnScreen = (options) => {
         observer.disconnect();
       }
     }, options);
-    if (ref.current) observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) observer.observe(currentRef);
     const timer = setTimeout(() => setIsVisible(true), 500);
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (currentRef) observer.unobserve(currentRef);
       clearTimeout(timer);
     };
   }, [ref, options]);
@@ -157,13 +158,12 @@ const LanguageSwitch = ({ lang, setLang }) => (
 );
 
 const Navbar = ({ lang, setLang }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const t = content[lang].nav;
 
   return (
     <nav className="fixed top-0 w-full z-50 mix-blend-difference text-white py-6 md:py-8 px-4 md:px-12 flex justify-between items-start">
       <div className="flex flex-col gap-1">
-        <a href="#" className="text-xl font-bold tracking-tighter uppercase font-sans leading-none block">Byron Jean Baker</a>
+        <a href="/" className="text-xl font-bold tracking-tighter uppercase font-sans leading-none block">Byron Jean Baker</a>
         <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">Architecture of Dreams</span>
       </div>
 
@@ -176,26 +176,7 @@ const Navbar = ({ lang, setLang }) => {
         <LanguageSwitch lang={lang} setLang={setLang} />
       </div>
 
-      {/* Mobile menu button - TEMPORARILY DISABLED */}
-      {/* <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
-        {menuOpen ? <X /> : <Menu />}
-      </button> */}
-
-      {/* Full Screen Menu - TEMPORARILY DISABLED */}
-      {/* {menuOpen && (
-        <div className="fixed inset-0 bg-black z-40 flex flex-col justify-center px-12">
-           <div className="space-y-8">
-             {[t.work, t.philosophy, t.services, t.contact].map(item => (
-               <a key={item} href="#" onClick={() => setMenuOpen(false)} className="block text-5xl font-bold tracking-tighter uppercase text-white hover:text-neutral-500 transition-colors">
-                 {item}
-               </a>
-             ))}
-           </div>
-           <div className="mt-12">
-             <LanguageSwitch lang={lang} setLang={setLang} />
-           </div>
-        </div>
-      )} */}
+      {/* Mobile menu temporarily disabled */}
     </nav>
   );
 };
