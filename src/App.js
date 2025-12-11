@@ -256,9 +256,9 @@ const Hero = ({ lang }) => {
             <p className="max-w-md text-sm md:text-base font-mono text-neutral-100 leading-relaxed uppercase mt-8">
                <span className="text-white block mb-2">
                  {lang === 'en' ? (
-                   <>// <span style={{color: '#A4C997'}}>001</span>. The Product</>
+                   <><span style={{color: '#A4C997'}}>001</span>. The Product</>
                  ) : (
-                   <>// <span style={{color: '#E8734E'}}>001</span>. El Producto</>
+                   <><span style={{color: '#E8734E'}}>001</span>. El Producto</>
                  )}
                </span>
                {lang === 'en' ? (
