@@ -167,14 +167,25 @@ const Navbar = ({ lang, setLang }) => {
         <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">AI-Powered Cinema by BJB</span>
       </div>
 
-      <div className="hidden md:flex flex-col items-end gap-2">
+      <div className="hidden md:flex items-center gap-4">
+        <LanguageSwitch lang={lang} setLang={setLang} />
+        <a 
+          href="#contact" 
+          className="text-[10px] font-mono uppercase tracking-widest hover:bg-white hover:text-black px-4 py-2 border border-white/20 transition-colors"
+        >
+          {t.contact}
+        </a>
+      </div>
+
+      {/* COMMENTED FOR FUTURE RESTORATION */}
+      {/* <div className="hidden md:flex flex-col items-end gap-2">
         <div className="flex gap-8 text-[10px] font-mono uppercase tracking-widest">
            {[t.work, t.philosophy, t.services].map(item => (
              <a key={item} href={`#${item.toLowerCase()}`} className="hover:underline decoration-1 underline-offset-4">{item}</a>
            ))}
         </div>
         <LanguageSwitch lang={lang} setLang={setLang} />
-      </div>
+      </div> */}
 
       {/* Mobile menu temporarily disabled */}
     </nav>
