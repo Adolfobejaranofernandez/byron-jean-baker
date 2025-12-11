@@ -270,13 +270,14 @@ const Hero = ({ lang }) => {
         </Reveal>
       </div>
 
-      <div className="flex justify-end items-end relative z-10">
+      {/* CTA moved to nav - no longer needed here */}
+      {/* <div className="flex justify-end items-end relative z-10">
          <Reveal delay={800}>
             <a href="#contact" className="text-xs font-mono uppercase tracking-widest hover:bg-white hover:text-black px-6 py-3 border border-white/20 transition-colors">
                {t.cta}
             </a>
          </Reveal>
-      </div>
+      </div> */}
     </section>
   );
 };
