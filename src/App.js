@@ -443,8 +443,8 @@ const VideoPortfolio = () => {
       {categories.map((category, catIndex) => (
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
-            <div className="relative z-10 mb-12">
-              <span className="text-xl font-mono uppercase tracking-widest text-neutral-500 block mb-2">
+            <div className="relative z-10 mb-8">
+              <span className="text-xl font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 border-l-2 border-white/30 pl-4">
                 {category.subtitle}
               </span>
               <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
