@@ -33,7 +33,7 @@ const content = {
     work: {
       title: "Premium Clients",
       vol: "2010-2024",
-      intro: "15 years directing visual content for major brands across global markets. Full-spectrum production from concept to delivery: music industry campaigns, product launches, festival visuals, and broadcast content.",
+      intro: "15 years directing visual content for major brands across global markets. Full-spectrum production from concept to delivery: fashion films, music industry campaigns, product launches, festival visuals, and broadcast content.",
       regions: "Spain \u00b7 Latin America \u00b7 USA \u00b7 Italy \u00b7 Brazil \u00b7 China",
       notable: "Stadium concerts. National broadcast. City installations.",
       roles: "Director \u00b7 DOP \u00b7 Editor \u00b7 Post-Production \u00b7 Concept",
@@ -82,7 +82,7 @@ const content = {
     work: {
       title: "Clientes Premium",
       vol: "2010-2024",
-      intro: "15 años dirigiendo contenido visual para grandes marcas en mercados globales. Producción integral desde concepto hasta entrega: campañas industria musical, lanzamientos de producto, visuales para festivales y contenido broadcast.",
+      intro: "15 años dirigiendo contenido visual para grandes marcas en mercados globales. Producción integral desde concepto hasta entrega: fashion films, campañas industria musical, lanzamientos de producto, visuales para festivales y contenido broadcast.",
       regions: "España · Latinoamérica · USA · Italia · Brasil · China",
       notable: "Conciertos en estadios. TV nacional. Instalaciones urbanas.",
       roles: "Director · DOP · Editor · Post-Producción · Concepto",
@@ -454,11 +454,13 @@ const VideoPortfolio = () => {
       {categories.map((category, catIndex) => (
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
-            <div className="relative z-10 flex justify-between items-end mb-24">
+            <div className="relative z-10 mb-12">
+              <span className="text-xl font-mono uppercase tracking-widest text-neutral-500 block mb-2">
+                {category.subtitle}
+              </span>
               <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
                 {category.title.split(' ')[0]} <span style={{color: '#FFDB6D'}}>{category.title.split(' ')[1]}</span>
               </h3>
-              <span className="text-xs font-mono text-neutral-500">{category.subtitle}</span>
             </div>
           </Reveal>
 
@@ -507,7 +509,7 @@ const VideoPortfolio = () => {
 const Work = ({ lang }) => {
   const t = content[lang].work;
   return (
-    <section id="work" className="py-32 px-4 md:px-12 border-b border-white/10">
+    <section id="work" className="py-12 md:py-16 px-4 md:px-12 border-b border-white/10">
       <Reveal>
         <div className="relative z-10 flex justify-between items-end mb-16">
            <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
@@ -522,9 +524,9 @@ const Work = ({ lang }) => {
         <Reveal delay={200}>
           <p className="text-base md:text-lg font-mono text-neutral-500 leading-relaxed uppercase max-w-4xl">
             {lang === 'en' ? (
-              <><span style={{color: '#A4C997'}}>15 years</span> directing campaigns for <span style={{color: '#FFDB6D'}}>global brands</span> across 6 markets. Full-spectrum production from concept to delivery: music industry, product launches, festival visuals, broadcast content. <span style={{color: '#E8734E'}}>Stadium concerts</span>. <span style={{color: '#E8734E'}}>National broadcast</span>. City installations.</>
+              <><span style={{color: '#A4C997'}}>15 years</span> directing campaigns for <span style={{color: '#FFDB6D'}}>global brands</span> across 6 markets. Full-spectrum production from concept to delivery: <span style={{color: '#E8734E'}}>fashion films</span>, music industry, product launches, festival visuals, broadcast content. <span style={{color: '#E8734E'}}>Stadium concerts</span>. <span style={{color: '#E8734E'}}>National broadcast</span>. City installations.</>
             ) : (
-              <><span style={{color: '#A4C997'}}>15 años</span> dirigiendo campañas para <span style={{color: '#FFDB6D'}}>marcas globales</span> en 6 mercados. Producción integral desde concepto hasta entrega: industria musical, lanzamientos de producto, visuales para festivales, contenido broadcast. <span style={{color: '#E8734E'}}>Conciertos en estadios</span>. <span style={{color: '#E8734E'}}>TV nacional</span>. Instalaciones urbanas.</>
+              <><span style={{color: '#A4C997'}}>15 años</span> dirigiendo campañas para <span style={{color: '#FFDB6D'}}>marcas globales</span> en 6 mercados. Producción integral desde concepto hasta entrega: <span style={{color: '#E8734E'}}>fashion films</span>, industria musical, lanzamientos de producto, visuales para festivales, contenido broadcast. <span style={{color: '#E8734E'}}>Conciertos en estadios</span>. <span style={{color: '#E8734E'}}>TV nacional</span>. Instalaciones urbanas.</>
             )}
           </p>
           <p className="text-xs font-mono text-neutral-600 uppercase tracking-widest mt-6">
@@ -557,40 +559,128 @@ const Footer = ({ lang }) => {
   return (
     <footer id="contact" className="py-24 px-4 md:px-12 bg-neutral-950">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
-        <div>
+        {/* Left Column - Big Statement */}
+        <div className="flex items-center">
            <Reveal>
-             <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white mb-8 leading-[0.8]">
+             <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white leading-[0.8]">
                {lang === 'en' ? (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8734E'}}>Build</span> It.</span></>
+                 <>WE ARE THE<br/><span style={{color: '#A4C997'}}>ARCHITECTS</span><br/>OF THE <span style={{color: '#E8734E'}}>IMPOSSIBLE</span>.</>
                ) : (
-                 <>{t.title_main}<br/><span className="text-neutral-600"><span style={{color: '#E8734E'}}>Crear</span>lo.</span></>
+                 <>SOMOS LOS<br/><span style={{color: '#A4C997'}}>ARQUITECTOS</span><br/>DE LO <span style={{color: '#FFDB6D'}}>IMPOSIBLE</span>.</>
                )}
              </h2>
            </Reveal>
         </div>
-        <div className="flex flex-col justify-between">
+
+        {/* Right Column - Contact Info */}
+        <div>
            <Reveal delay={200}>
-              <div className="space-y-8">
-                 <a href={`mailto:${t.email}`} className="block text-xl md:text-2xl font-mono text-white hover:text-neutral-400 border-b border-white/20 pb-4">
-                   {t.email}
-                 </a>
-                 <div className="flex justify-between text-xs font-mono uppercase text-neutral-500 tracking-widest">
-                    <span>{t.loc}</span>
-                    <span>© 2025 BJB</span>
-                 </div>
+              {/* Let Us Build It Title */}
+              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-white mb-12 leading-none">
+                {lang === 'en' ? (
+                  <>LET US <span style={{color: '#E8734E'}}>BUILD</span> IT.</>
+                ) : (
+                  <>DÉJANOS <span style={{color: '#E8734E'}}>CREARLO</span>.</>
+                )}
+              </h3>
+
+              {/* Commissions Section */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
+                  {lang === 'en' ? 'Commissions' : 'Encargos'}
+                </h4>
+                <div className="space-y-4">
+                  <div>
+                    <a href="mailto:contact@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      contact@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'General inquiries. First contact.' : 'Consultas generales. Primer contacto.'}
+                    </p>
+                  </div>
+                  <div>
+                    <a href="mailto:projects@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      projects@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'New commissions. Pitch briefings.' : 'Nuevos encargos. Briefings.'}
+                    </p>
+                  </div>
+                </div>
               </div>
-           </Reveal>
-           <Reveal delay={400}>
-              <div className="mt-12 flex gap-4">
-                 <div className="w-full h-32 bg-neutral-900 border border-white/10 flex items-center justify-center p-4 text-center">
-                    <span className="text-[10px] font-mono text-neutral-600 uppercase whitespace-pre-line">
-                       {lang === 'en' ? (
-                         <>We are the <span style={{color: '#A4C997'}}>architects</span><br/>of the <span style={{color: '#E8734E'}}>impossible</span>.</>
-                       ) : (
-                         <>Somos los <span style={{color: '#A4C997'}}>arquitectos</span><br/>de lo <span style={{color: '#FFDB6D'}}>imposible</span>.</>
-                       )}
-                    </span>
-                 </div>
+
+              {/* Departments Section */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
+                  {lang === 'en' ? 'Departments' : 'Departamentos'}
+                </h4>
+                <div className="space-y-4">
+                  <div>
+                    <a href="mailto:commercials@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      commercials@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Advertising spots. Brand campaigns.' : 'Spots publicitarios. Campañas de marca.'}
+                    </p>
+                  </div>
+                  <div>
+                    <a href="mailto:fashion@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      fashion@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Editorial films. Runway visuals.' : 'Films editoriales. Visuales de pasarela.'}
+                    </p>
+                  </div>
+                  <div>
+                    <a href="mailto:musicvideo@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      musicvideo@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Performance narratives. Artist visuals.' : 'Narrativas de performance. Visuales artísticos.'}
+                    </p>
+                  </div>
+                  <div>
+                    <a href="mailto:cinema@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      cinema@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Narrative work. Experimental films.' : 'Trabajo narrativo. Cine experimental.'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Operations Section */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
+                  {lang === 'en' ? 'Operations' : 'Operaciones'}
+                </h4>
+                <div className="space-y-4">
+                  <div>
+                    <a href="mailto:production@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      production@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Full-service execution. Logistics.' : 'Ejecución integral. Logística.'}
+                    </p>
+                  </div>
+                  <div>
+                    <a href="mailto:press@byronjeanbaker.studio" className="block text-sm md:text-base font-mono text-white hover:text-[#E8734E] transition-colors">
+                      press@byronjeanbaker.studio
+                    </a>
+                    <p className="text-[10px] font-mono uppercase text-neutral-600 mt-1">
+                      {lang === 'en' ? 'Media inquiries. Press materials.' : 'Consultas de medios. Material de prensa.'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Info */}
+              <div className="pt-8 border-t border-white/10">
+                <div className="flex flex-col md:flex-row justify-between text-xs font-mono uppercase text-neutral-500 tracking-widest gap-2">
+                  <span>{t.loc}</span>
+                  <span>© 2025 BJB</span>
+                </div>
               </div>
            </Reveal>
         </div>
