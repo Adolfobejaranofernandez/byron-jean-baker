@@ -551,7 +551,7 @@ const Work = ({ lang }) => {
         <div className="border-t border-white/10 pt-16 space-y-12">
           {/* New Row - Top - 3 Logos Centered */}
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 lg:gap-20">
-            <img src="/thumbnails/Universal Music Group_idcVSa6kKY_1.png" alt="Universal Music" className="h-20 md:h-24 lg:h-28 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/Universal Music Group_idcVSa6kKY_1.png" alt="Universal Music" className="h-20 md:h-24 lg:h-28 w-auto" style={{filter: 'grayscale(1) opacity(0.9)'}} />
             <img src="/thumbnails/BMG_id-8zctsKG_0.png" alt="BMG Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
             <img src="/thumbnails/idLPpgqNbl_logos.png" alt="EMI Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
           </div>
