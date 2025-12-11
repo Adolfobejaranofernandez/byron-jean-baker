@@ -444,10 +444,10 @@ const VideoPortfolio = () => {
         <div key={catIndex} className={catIndex > 0 ? 'mt-32' : ''}>
           <Reveal>
             <div className="relative z-10 mb-4">
-              <span className="text-xl font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 border-l-2 border-white/30 pl-4">
+              <span className="text-base font-sans font-bold uppercase tracking-widest text-neutral-500 block mb-2 pl-4">
                 {category.subtitle}
               </span>
-              <h3 className="text-xl font-mono uppercase tracking-widest text-white pl-4">
+              <h3 className="text-xl font-mono uppercase tracking-widest text-white border-l-2 border-white pl-4">
                 {category.title.split(' ')[0]} <span style={{color: '#FFDB6D'}}>{category.title.split(' ')[1]}</span>
               </h3>
             </div>
