@@ -546,9 +546,17 @@ const Work = ({ lang }) => {
         </Reveal>
       </div>
 
-      {/* Logo Strip - Horizontal, Large */}
+      {/* Logo Strip - Two Rows */}
       <Reveal delay={400}>
-        <div className="border-t border-white/10 pt-16">
+        <div className="border-t border-white/10 pt-16 space-y-12">
+          {/* New Row - Top - 3 Logos Centered */}
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 lg:gap-20">
+            <img src="/thumbnails/Universal Music Group_idcVSa6kKY_1.png" alt="Universal Music" className="h-20 md:h-24 lg:h-28 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/BMG_id-8zctsKG_0.png" alt="BMG Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+            <img src="/thumbnails/idLPpgqNbl_logos.png" alt="EMI Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
+          </div>
+
+          {/* Existing Row - Bottom - 5 Logos */}
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16 lg:gap-20">
             <img src="/thumbnails/Warner Music Group_idMFrEs0Gz_0.png" alt="Warner Music" className="h-16 md:h-20 lg:h-24 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
             <img src="/thumbnails/Budweiser_Logo_1.png" alt="Budweiser" className="h-14 md:h-16 lg:h-20 w-auto" style={{filter: 'grayscale(1) opacity(0.7)'}} />
