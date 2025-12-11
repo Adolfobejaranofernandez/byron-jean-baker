@@ -347,26 +347,26 @@ const VideoPortfolio = () => {
         { id: 9, src: '/videos/fashion-new-04.mp4', title: 'Robots' },
         { id: 10, src: '/videos/fashion-new-05.mp4', title: 'Frozen' }
       ],
-      textCardPosition: 4 // Random position 0-5
+      textCardPosition: 4
     },
     {
-      title: 'Abyssal Portraits',
-      subtitle: 'Cephalopod Hybrids',
+      title: 'Eastern Elegance',
+      subtitle: 'Nocturnal Fields',
       description: {
-        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
-        highlight1: 'intelligence',
-        highlight2: 'consciousness',
-        color1: '#A4C997',
-        color2: '#E8734E'
+        text: 'Silk meets wheat under moonlight. Eastern grace flows through golden fields where ancient elegance confronts pastoral stillness.',
+        highlight1: 'moonlight',
+        highlight2: 'elegance',
+        color1: '#FFDB6D',
+        color2: '#A4C997'
       },
       videos: [
-        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
-        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
-        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
-        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
-        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
+        { id: 26, src: '/videos/fashion-wheat-01.mp4', title: 'Wheat 01' },
+        { id: 27, src: '/videos/fashion-wheat-02.mp4', title: 'Wheat 02' },
+        { id: 28, src: '/videos/fashion-wheat-03.mp4', title: 'Wheat 03' },
+        { id: 29, src: '/videos/fashion-wheat-04.mp4', title: 'Wheat 04' },
+        { id: 30, src: '/videos/fashion-wheat-05.mp4', title: 'Wheat 05' }
       ],
-      textCardPosition: 0 // Random position 0-5
+      textCardPosition: 2
     },
     {
       title: 'Mythic Forms',
@@ -385,7 +385,26 @@ const VideoPortfolio = () => {
         { id: 14, src: '/videos/creature-aztec.mp4', title: 'Aztec' },
         { id: 15, src: '/videos/creature-bubbles.mp4', title: 'Bubbles' }
       ],
-      textCardPosition: 1 // Random position 0-5
+      textCardPosition: 1
+    },
+    {
+      title: 'Abyssal Portraits',
+      subtitle: 'Cephalopod Hybrids',
+      description: {
+        text: 'Human forms fused with deep-sea intelligence. Hyperrealistic textures where flesh becomes tentacle, consciousness becomes collective.',
+        highlight1: 'intelligence',
+        highlight2: 'consciousness',
+        color1: '#A4C997',
+        color2: '#E8734E'
+      },
+      videos: [
+        { id: 16, src: '/videos/octopus-man-01.mp4', title: 'Octopus Man 01' },
+        { id: 17, src: '/videos/octopus-man-02.mp4', title: 'Octopus Man 02' },
+        { id: 18, src: '/videos/octopus-man-03.mp4', title: 'Octopus Man 03' },
+        { id: 19, src: '/videos/octopus-man-04.mp4', title: 'Octopus Man 04' },
+        { id: 20, src: '/videos/octopus-man-05.mp4', title: 'Octopus Man 05' }
+      ],
+      textCardPosition: 0
     },
     {
       title: 'Sacred Aesthetics',
@@ -404,7 +423,7 @@ const VideoPortfolio = () => {
         { id: 4, src: '/videos/desert-closeup.mp4', title: 'Desert Closeup' },
         { id: 5, src: '/videos/white-dust.mp4', title: 'White Dust' }
       ],
-      textCardPosition: 2 // Random position 0-5
+      textCardPosition: 2
     },
     {
       title: 'Red Queens',
@@ -423,7 +442,7 @@ const VideoPortfolio = () => {
         { id: 24, src: '/videos/red-queen-04.mp4', title: 'Red Queen 04' },
         { id: 25, src: '/videos/red-queen-05.mp4', title: 'Red Queen 05' }
       ],
-      textCardPosition: 3 // Random position 0-5
+      textCardPosition: 3
     }
   ];
 
