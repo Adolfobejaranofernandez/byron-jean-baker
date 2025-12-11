@@ -726,7 +726,10 @@ const Footer = ({ lang }) => {
       <div className="mt-16 pt-8 border-t border-white/10">
         <div className="flex flex-col md:flex-row justify-between text-xs font-mono uppercase text-neutral-500 tracking-widest gap-2">
           <span>{t.loc}</span>
-          <span>© 2025 BJB</span>
+          <div className="flex gap-4">
+            <a href="/legal/privacy.html" className="hover:text-white transition-colors">Privacy</a>
+            <span>© 2025 BJB</span>
+          </div>
         </div>
       </div>
     </footer>
