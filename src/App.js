@@ -204,7 +204,7 @@ const Hero = ({ lang }) => {
     }
   };
 
-  const videoSrc = isMobile ? '/videos/videoWeb-mobile.mp4' : '/videos/videoWeb.mp4';
+  const videoSrc = isMobile ? '/videos/videoWeb-mobile.mp4' : 'https://pub-5d9ed0f82d94401c8dee08895d854a6d.r2.dev/hero/videoWeb.mp4';
 
   return (
     <section className="relative min-h-screen flex flex-col pt-32 pb-12 px-4 md:px-12 border-b border-white/10">
