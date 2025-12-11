@@ -604,7 +604,7 @@ const Footer = ({ lang }) => {
                 {/* Key People */}
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2 text-neutral-600">
+                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2" style={{color: '#A4C997'}}>
                       CEO
                     </h4>
                     <a href="mailto:bjb@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors">
@@ -613,7 +613,7 @@ const Footer = ({ lang }) => {
                   </div>
 
                   <div>
-                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2 text-neutral-600">
+                    <h4 className="text-xs font-mono uppercase tracking-widest mb-2" style={{color: '#A4C997'}}>
                       {lang === 'en' ? 'Production Designer / Creative Director' : 'Diseñador Producción / Director Creativo'}
                     </h4>
                     <a href="mailto:juan.marrero@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors">
