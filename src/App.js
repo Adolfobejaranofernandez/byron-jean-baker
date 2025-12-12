@@ -636,29 +636,29 @@ const Footer = ({ lang }) => {
               </div>
            </Reveal>
 
-           {/* Departments (with full emails and descriptions) */}
+           {/* All Services - Only 2 Emails */}
            <Reveal delay={400}>
-              <div className="space-y-6">
-                {/* Commissions */}
+              <div className="space-y-8">
+                {/* Main Contact - 2 Emails Only */}
                 <div>
-                  <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
-                    {lang === 'en' ? 'Commissions' : 'Encargos'}
+                  <h4 className="text-xs font-mono uppercase tracking-widest mb-4" style={{color: '#FFDB6D'}}>
+                    {lang === 'en' ? 'All Inquiries' : 'Todas las Consultas'}
                   </h4>
-                  <div className="space-y-3">
+                  <div className="space-y-4 border-l-2 border-white/20 pl-4">
                     <div>
-                      <a href="mailto:contact@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      <a href="mailto:contact@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors mb-2">
                         contact@byronjeanbaker.studio
                       </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'General inquiries. First contact.' : 'Consultas generales. Primer contacto.'}
+                      <p className="text-[9px] font-mono uppercase text-neutral-600 leading-relaxed">
+                        {lang === 'en' ? 'General Inquiries · First Contact' : 'Consultas Generales · Primer Contacto'}
                       </p>
                     </div>
                     <div>
-                      <a href="mailto:projects@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
+                      <a href="mailto:projects@byronjeanbaker.studio" className="block text-sm font-mono text-white hover:text-[#E8734E] transition-colors mb-2">
                         projects@byronjeanbaker.studio
                       </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'New commissions. Pitch briefings.' : 'Nuevos encargos. Briefings.'}
+                      <p className="text-[9px] font-mono uppercase text-neutral-600 leading-relaxed">
+                        {lang === 'en' ? 'New Commissions · Pitch Briefings' : 'Nuevos Encargos · Briefings'}
                       </p>
                     </div>
                   </div>
@@ -666,67 +666,25 @@ const Footer = ({ lang }) => {
 
                 {/* Departments */}
                 <div>
-                  <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
+                  <h4 className="text-xs font-mono uppercase tracking-widest mb-4" style={{color: '#A4C997'}}>
                     {lang === 'en' ? 'Departments' : 'Departamentos'}
                   </h4>
-                  <div className="space-y-3">
-                    <div>
-                      <a href="mailto:commercials@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        commercials@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Advertising spots. Brand campaigns.' : 'Spots publicitarios. Campañas de marca.'}
-                      </p>
-                    </div>
-                    <div>
-                      <a href="mailto:fashion@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        fashion@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Editorial films. Runway visuals.' : 'Films editoriales. Visuales de pasarela.'}
-                      </p>
-                    </div>
-                    <div>
-                      <a href="mailto:musicvideo@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        musicvideo@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Performance narratives. Artist visuals.' : 'Narrativas de performance. Visuales artísticos.'}
-                      </p>
-                    </div>
-                    <div>
-                      <a href="mailto:cinema@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        cinema@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Narrative work. Experimental films.' : 'Trabajo narrativo. Cine experimental.'}
-                      </p>
-                    </div>
+                  <div className="text-[10px] font-mono uppercase text-neutral-600 leading-loose space-y-1">
+                    <p>{lang === 'en' ? 'Commercials · Brand Campaigns' : 'Comerciales · Campañas de Marca'}</p>
+                    <p>{lang === 'en' ? 'Fashion Films · Editorial Visuals' : 'Fashion Films · Visuales Editoriales'}</p>
+                    <p>{lang === 'en' ? 'Music Videos · Artist Narratives' : 'Videos Musicales · Narrativas Artísticas'}</p>
+                    <p>{lang === 'en' ? 'Cinema · Experimental Films' : 'Cine · Films Experimentales'}</p>
                   </div>
                 </div>
 
                 {/* Operations */}
                 <div>
-                  <h4 className="text-xs font-mono uppercase tracking-widest mb-3" style={{color: '#FFDB6D'}}>
+                  <h4 className="text-xs font-mono uppercase tracking-widest mb-4" style={{color: '#A4C997'}}>
                     {lang === 'en' ? 'Operations' : 'Operaciones'}
                   </h4>
-                  <div className="space-y-3">
-                    <div>
-                      <a href="mailto:production@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        production@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Full-service execution. Logistics.' : 'Ejecución integral. Logística.'}
-                      </p>
-                    </div>
-                    <div>
-                      <a href="mailto:press@byronjeanbaker.studio" className="block text-xs font-mono text-white hover:text-[#E8734E] transition-colors">
-                        press@byronjeanbaker.studio
-                      </a>
-                      <p className="text-[9px] font-mono uppercase text-neutral-600 mt-1">
-                        {lang === 'en' ? 'Media inquiries. Press materials.' : 'Consultas de medios. Material de prensa.'}
-                      </p>
-                    </div>
+                  <div className="text-[10px] font-mono uppercase text-neutral-600 leading-loose space-y-1">
+                    <p>{lang === 'en' ? 'Production · Full-Service Execution' : 'Producción · Ejecución Integral'}</p>
+                    <p>{lang === 'en' ? 'Press & Media · Materials' : 'Prensa & Medios · Materiales'}</p>
                   </div>
                 </div>
               </div>
