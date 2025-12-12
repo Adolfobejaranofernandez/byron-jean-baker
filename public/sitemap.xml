@@ -1,33 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://byronjeanbaker.studio/</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Sections -->
   <url>
     <loc>https://byronjeanbaker.studio/#archive</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://byronjeanbaker.studio/#method</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://byronjeanbaker.studio/#capabilities</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://byronjeanbaker.studio/#work</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  
+  <!-- SEO Landing Pages - Luxury Services -->
+  <url>
+    <loc>https://byronjeanbaker.studio/luxury-video-production.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://byronjeanbaker.studio/fashion-films.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://byronjeanbaker.studio/music-video-production.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- SEO Landing Pages - AI Services -->
+  <url>
+    <loc>https://byronjeanbaker.studio/ai-video-production.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://byronjeanbaker.studio/ai-fashion-films.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://byronjeanbaker.studio/ai-music-videos.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Unique Positioning Page -->
+  <url>
+    <loc>https://byronjeanbaker.studio/impossible-ideas.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Legal -->
+  <url>
+    <loc>https://byronjeanbaker.studio/legal/privacy.html</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
