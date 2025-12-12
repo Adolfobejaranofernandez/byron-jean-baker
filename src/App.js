@@ -191,7 +191,6 @@ const Navbar = ({ lang, setLang }) => {
 };
 
 const Hero = ({ lang }) => {
-  const t = content[lang].hero;
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
