@@ -158,8 +158,6 @@ const LanguageSwitch = ({ lang, setLang }) => (
 );
 
 const Navbar = ({ lang, setLang }) => {
-  const t = content[lang].nav;
-
   return (
     <nav className="fixed top-0 w-full z-50 mix-blend-difference text-white py-6 md:py-8 px-4 md:px-12 flex justify-between items-start">
       <div className="flex flex-col gap-1">
@@ -173,7 +171,7 @@ const Navbar = ({ lang, setLang }) => {
           href="#contact" 
           className="text-[10px] font-mono uppercase tracking-widest hover:bg-white hover:text-black px-4 py-2 border border-white/20 transition-colors"
         >
-          {t.contact}
+          {content[lang].nav.contact}
         </a>
       </div>
 
