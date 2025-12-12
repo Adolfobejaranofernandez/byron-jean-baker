@@ -164,7 +164,7 @@ const Navbar = ({ lang, setLang }) => {
     <nav className="fixed top-0 w-full z-50 mix-blend-difference text-white py-6 md:py-8 px-4 md:px-12 flex justify-between items-start">
       <div className="flex flex-col gap-1">
         <a href="/" className="text-xl font-bold tracking-tighter uppercase font-sans leading-none block">Byron Jean Baker</a>
-        <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">AI-Powered Cinema by BJB</span>
+        <span className="text-[9px] font-mono tracking-widest uppercase opacity-70">Luxury Cinematography Studio</span>
       </div>
 
       <div className="hidden md:flex items-center gap-4">
